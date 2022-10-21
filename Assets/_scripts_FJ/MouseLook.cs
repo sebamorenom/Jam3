@@ -9,7 +9,7 @@ public class MouseLook : MonoBehaviour
     [SerializeField] Transform playerBody;
 
     float xRotation = 0f;
-    void Awake()
+    void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;   
     }
