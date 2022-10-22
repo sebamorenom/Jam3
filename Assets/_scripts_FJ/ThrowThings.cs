@@ -11,10 +11,11 @@ public class ThrowThings : MonoBehaviour
     private Vector3 oldPos;
     private bool isReturning = false;
     public Axe axe;
+    public float time = 0.0f;
     void Start()
     {
         
-        axeRb = GetComponentInChildren<Rigidbody>();
+        
     }
 
     
@@ -31,7 +32,16 @@ public class ThrowThings : MonoBehaviour
         }
         if(isReturning)
         {
-
+            if(time < 1.0f)
+            {
+                axeRb.position = GetBezierQuadraticCurvePoint(time, oldPos,curvePoint.position, target.position);
+                axeRb.rotation = Quaternion.Slerp(axe.transform.rotation, target.rotation, 50 * Time.deltaTime);
+                time += Time.deltaTime;
+            }
+            else
+            {
+                ResetAxe();
+            }
         }
     }
 
@@ -46,12 +56,20 @@ public class ThrowThings : MonoBehaviour
 
     private void AxeReturn()
     {
+        time = 0.0f;
         oldPos = axeRb.position;
         isReturning = true;
         axeRb.velocity = Vector3.zero;
         axeRb.isKinematic = true;
     }
     
+    private void ResetAxe()
+    {
+        isReturning = false;
+        axeRb.transform.parent = transform;
+        axeRb.position = target.position;
+        axeRb.rotation = target.rotation;
+    }
 
     Vector3 GetBezierQuadraticCurvePoint(float t, Vector3 p0, Vector3 p1, Vector3 p2)
     {
