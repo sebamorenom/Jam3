@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform groundCheck;
     [SerializeField] float groundDistance = 0.4f;
     [SerializeField] LayerMask groundMask;
+    public GameObject radialMenu;
 
     Vector3 velocity;
     bool isGrounded;
@@ -45,6 +46,15 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
-        
+        if(Input.GetKeyDown(KeyCode.Tab))
+        {
+            radialMenu.SetActive(true);
+            Cursor.lockState = CursorLockMode.Confined;
+        }
+        if (Input.GetKeyUp(KeyCode.Tab))
+        {
+            radialMenu.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 }

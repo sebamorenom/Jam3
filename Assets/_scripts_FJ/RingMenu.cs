@@ -26,7 +26,7 @@ public class RingMenu : MonoBehaviour
             ringPieces[i].backGround.fillAmount = (1f / weapons.Length) - (gapDegrees / 360f);
             ringPieces[i].backGround.transform.localRotation = Quaternion.Euler(0, 0, degreesPerPiece / 2f + gapDegrees / 2f + i * degreesPerPiece);
 
-            ringPieces[i].icon.sprite = weapons[i].icon.sprite;
+            ringPieces[i].icon.sprite = weapons[i].icon;
 
             Vector3 directionVector = Quaternion.AngleAxis(i * degreesPerPiece, Vector3.forward) * Vector3.up;
             Vector3 movementVector = directionVector * distanceToIcon;
@@ -44,9 +44,11 @@ public class RingMenu : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-
+            
         }
     }
+
+    
 
     private int GetActiveElement()
     {

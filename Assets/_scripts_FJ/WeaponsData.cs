@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,5 +12,5 @@ public class WeaponsData : ScriptableObject
     public int weaponDamage;
     public bool leftHanded;
     public bool throwable;
-    public Image icon;
+    public Sprite icon;
 }
