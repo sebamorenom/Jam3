@@ -15,7 +15,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] LayerMask groundMask;
     public GameObject radialMenu;
 
-    Vector3 velocity;
+    [HideInInspector]
+    public Vector3 velocity;
     bool isGrounded;
 
     void Start()
