@@ -5175,7 +5175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 603792760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.46, y: 4.91, z: 0}
+  m_LocalPosition: {x: 2.203, y: 0.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5262,7 +5262,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966975910}
   m_LocalRotation: {x: 0, y: -0.21643952, z: 0, w: 0.97629607}
-  m_LocalPosition: {x: 1.13, y: 2.06, z: 0.7}
+  m_LocalPosition: {x: 0.759, y: 0.36, z: 0.527}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5948,7 +5948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b8990e35173ef44a06dfcc1196b6c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 500
   playerBody: {fileID: 2092211697}
 --- !u!114 &2067230752
 MonoBehaviour:
@@ -5999,6 +5999,7 @@ GameObject:
   - component: {fileID: 2092211702}
   - component: {fileID: 2092211703}
   - component: {fileID: 2092211704}
+  - component: {fileID: 2092211705}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -6163,6 +6164,28 @@ MonoBehaviour:
     m_Bits: 64
   grounded: 0
   orientation: {fileID: 1420694196}
+--- !u!114 &2092211705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092211695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54e93ff04f5b2941a7cf06bed7044e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 2067230750}
+  attackPoint: {fileID: 966975911}
+  objectToThrow: {fileID: 7619250406687859405, guid: ad474bf3cbca44d43aba3e3ec0784db3,
+    type: 3}
+  item: {fileID: 0}
+  totalThrows: 100
+  throwCoolDown: 0.25
+  throwKey: 323
+  throwForce: 100
+  throwUpwardForce: 0
 --- !u!1001 &409348799570310282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6174,6 +6197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: hacha
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958908880072685038, guid: 12ce1376b8048d7429367aea10fd95c8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5290946651498689184, guid: 12ce1376b8048d7429367aea10fd95c8,
         type: 3}

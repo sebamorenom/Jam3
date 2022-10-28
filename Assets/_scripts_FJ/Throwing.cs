@@ -9,6 +9,7 @@ public class Throwing : MonoBehaviour
     public Transform cam;
     public Transform attackPoint;
     public GameObject objectToThrow;
+    public Item item;
 
     [Header("Settings")]
     public int totalThrows;
@@ -30,6 +31,7 @@ public class Throwing : MonoBehaviour
     {
         if(Input.GetKey(throwKey) && readyToThrow && totalThrows > 0)
         {
+            
             Throw();
         }
     }
@@ -39,7 +41,7 @@ public class Throwing : MonoBehaviour
         readyToThrow = false;
 
         //instantiate object to throw
-        GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
+        GameObject projectile = Instantiate(objectToThrow, attackPoint.position, Quaternion.identity);
 
         //get rigidbody component
         Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();
