@@ -96,7 +96,6 @@ public class Movement : MonoBehaviour
     public void MoveCharacter()
     {
         Vector3 aux = movVect.z * transform.forward + movVect.x * transform.right;
-        Debug.Log(aux);
         transform.Translate(aux.x, aux.y, aux.z);
     }
 
@@ -110,17 +109,18 @@ public class Movement : MonoBehaviour
         GameObject aux = null;
         for (; ; )
         {
-            scan.GetLastSeenItem(out aux);
+            bool flip;
+            scan.GetLastSeenItem(out aux, out flip);
             if (aux != null)
             {
                 if (agaDer.transform.childCount == 0)
                 {
-                    Parent(agaDer.transform, aux.transform);
+                    Parent(agaDer.transform, aux.transform, flip);
                     break;
                 }
                 if (agaIzq.transform.childCount == 0)
                 {
-                    Parent(agaIzq.transform, aux.transform);
+                    Parent(agaIzq.transform, aux.transform, flip);
                     break;
                 }
             }
@@ -129,11 +129,12 @@ public class Movement : MonoBehaviour
         }
     }
 
-    public void Parent(Transform parent, Transform child)
+    public void Parent(Transform parent, Transform child, bool flip)
     {
         child.SetParent(parent);
         child.position = parent.position;
-        child.transform.right = -Camera.main.transform.forward;
+        child.transform.up = parent.transform.forward;
+        child.transform.right = flip ? parent.transform.up : -parent.transform.up;
         child.GetComponent<Rigidbody>().isKinematic = true;
     }
 

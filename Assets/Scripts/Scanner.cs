@@ -160,10 +160,12 @@ public class Scanner : MonoBehaviour
 
     }
 
-    public bool GetLastSeenItem(out GameObject aux)
+    public bool GetLastSeenItem(out GameObject aux, out bool flip)
     {
+        flip = false;
         if (toPickUp != null)
         {
+            flip = toPickUp.weapType == WeaponType.Shield ? true : false;
             aux = toPickUp.gameObject;
             toPickUp = null;
             return true;
