@@ -20,5 +20,6 @@ public class Axe : MonoBehaviour
     {
        
         GetComponent<Rigidbody>().isKinematic = true;
+        transform.SetParent(collision.transform);
     }
 }

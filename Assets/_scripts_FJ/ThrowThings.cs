@@ -61,6 +61,7 @@ public class ThrowThings : MonoBehaviour
         isReturning = true;
         axeRb.velocity = Vector3.zero;
         axeRb.isKinematic = true;
+        
     }
     
     private void ResetAxe()
