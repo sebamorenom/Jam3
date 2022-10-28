@@ -97,7 +97,7 @@ public class Movement : MonoBehaviour
     {
         Vector3 aux = movVect.z * transform.forward + movVect.x * transform.right;
         Debug.Log(aux);
-        rb.AddForce(aux * 3,ForceMode.Force);
+        transform.Translate(aux.x, aux.y, aux.z);
     }
 
     public void HacePum()
