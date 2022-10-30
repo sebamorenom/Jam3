@@ -9,8 +9,18 @@ public class DashAbility : Ability
     public float dashVelocity;
     public override void Activate(GameObject parent)
     {
-        PlayerMovement movement = parent.GetComponent<PlayerMovement>();
+        PlayerMovementRigidbody movement = parent.GetComponent<PlayerMovementRigidbody>();
+        Rigidbody rigidbody = parent.GetComponent<Rigidbody>();
 
-        movement.velocity = movement.velocity.normalized * dashVelocity;
+        rigidbody.velocity = new Vector3(movement.horizontalInput, movement.transform.position.y, movement.verticalInput).normalized * dashVelocity;
+    }
+
+    public override void BeginCooldown(GameObject parent)
+    {
+        PlayerMovementRigidbody movement = parent.GetComponent<PlayerMovementRigidbody>();
+        Rigidbody rigidbody = parent.GetComponent<Rigidbody>();
+
+        rigidbody.velocity = new Vector3(movement.horizontalInput, movement.transform.position.y, movement.verticalInput).normalized * movement.moveSpeed;
     }
 }
+

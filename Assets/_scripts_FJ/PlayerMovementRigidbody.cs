@@ -24,9 +24,9 @@ public class PlayerMovementRigidbody : MonoBehaviour
     public Transform orientation;
 
 
-
-    float horizontalInput;
-    float verticalInput;
+    [HideInInspector]
+    public float horizontalInput;
+    public float verticalInput;
 
     Vector3 moveDirection;
 

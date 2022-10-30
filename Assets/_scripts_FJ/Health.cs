@@ -16,6 +16,19 @@ namespace JAM3.Health
 
         void Update()
         {
+            if(currentHealth <= 0)
+            {
+                Die();
+            }
+        }
+
+        public void TakeDamage(float damage)
+        {
+            currentHealth -= damage;
+        }
+
+        public void Die()
+        {
 
         }
     }

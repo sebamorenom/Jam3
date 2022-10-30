@@ -17,7 +17,7 @@ namespace JAM3.Health
         private void Update()
         {
             float dist = Vector3.Distance(player.transform.position, transform.position);
-            Debug.Log(dist);
+            
             if(dist <= distToPoint && health.currentHealth < health.maxHealth)
             {
                 RestoringHealth();

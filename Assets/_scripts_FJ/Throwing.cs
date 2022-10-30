@@ -41,7 +41,7 @@ public class Throwing : MonoBehaviour
         readyToThrow = false;
 
         //instantiate object to throw
-        GameObject projectile = Instantiate(objectToThrow, attackPoint.position, Quaternion.identity);
+        GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
 
         //get rigidbody component
         Rigidbody projectileRb = projectile.GetComponent<Rigidbody>();
