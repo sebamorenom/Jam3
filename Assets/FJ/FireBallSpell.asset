@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d9973d36b7c444b834360c38ebd3c6, type: 3}
   m_Name: FireBallSpell
   m_EditorClassIdentifier: 
-  name: 
-  coolDown: 0
-  activeTime: 0
-  prefab: {fileID: 0}
+  name: FireBall
+  coolDown: 3
+  activeTime: 1
+  prefab: {fileID: 7052014809796068417, guid: 696bf33920cb6a840a835507b2e6247d, type: 3}
   shootingPoint: {fileID: 0}
   cam: {fileID: 0}
-  throwForce: 0
+  throwForce: 20

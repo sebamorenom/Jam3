@@ -10,6 +10,7 @@ public class Spells : Ability
     public Transform cam;
     public float throwForce;
     Rigidbody projectileRb;
+    public float damage;
 
     public override void Activate(GameObject parent)
     {
