@@ -136,9 +136,9 @@ GameObject:
   - component: {fileID: 26180876}
   - component: {fileID: 26180875}
   - component: {fileID: 26180874}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy (2)
-  m_TagString: Untagged
+  m_TagString: Entity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,6 +157,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  isPoisoned: 0
 --- !u!136 &26180875
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -521,9 +522,9 @@ GameObject:
   - component: {fileID: 781140809}
   - component: {fileID: 781140808}
   - component: {fileID: 781140807}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy (1)
-  m_TagString: Untagged
+  m_TagString: Entity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -542,6 +543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  isPoisoned: 0
 --- !u!136 &781140808
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -702,9 +704,9 @@ GameObject:
   - component: {fileID: 1104588729}
   - component: {fileID: 1104588728}
   - component: {fileID: 1104588727}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy (3)
-  m_TagString: Untagged
+  m_TagString: Entity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -723,6 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  isPoisoned: 0
 --- !u!136 &1104588728
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1106,9 +1109,9 @@ GameObject:
   - component: {fileID: 1872901575}
   - component: {fileID: 1872901574}
   - component: {fileID: 1872901573}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Entity
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1127,6 +1130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  isPoisoned: 0
 --- !u!136 &1872901574
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1238,7 +1242,7 @@ PrefabInstance:
     - target: {fileID: 6181598796234882389, guid: 9e6f9169d386f6745a194afc96a90b8c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.06
+      value: 3.23
       objectReference: {fileID: 0}
     - target: {fileID: 6181598796234882389, guid: 9e6f9169d386f6745a194afc96a90b8c,
         type: 3}
@@ -1364,5 +1368,11 @@ PrefabInstance:
       propertyPath: radialMenu
       value: 
       objectReference: {fileID: 762859001}
+    - target: {fileID: 8439190146564591382, guid: e774987055b1dde4c99198aa7772133e,
+        type: 3}
+      propertyPath: ability
+      value: 
+      objectReference: {fileID: 11400000, guid: 7060e6210713904498ab13a848fffd3d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e774987055b1dde4c99198aa7772133e, type: 3}

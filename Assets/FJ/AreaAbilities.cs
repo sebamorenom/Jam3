@@ -17,11 +17,14 @@ public class AreaAbilities : Ability
 
     public override void Activate(GameObject parent)
     {
-        
-        Collider[] objectives = Physics.OverlapSphere(spawnPosition, areaRadius, 9);
-        foreach(Collider c in objectives)
+        RaycastHit hit;
+         if(Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit))
         {
-            
+            spawnPosition = hit.point;
         }
+        
+        
     }
+
+
 }

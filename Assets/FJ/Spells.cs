@@ -9,6 +9,7 @@ public class Spells : Ability
     public Transform shootingPoint;
     public Transform cam;
     public float throwForce;
+    public float throwUpdwardForce;
     Rigidbody projectileRb;
     public float damage;
 
@@ -28,7 +29,7 @@ public class Spells : Ability
 
         
 
-        Vector3 forceToAdd = forceDirection * throwForce;
+        Vector3 forceToAdd = forceDirection * throwForce + Vector3.up * throwUpdwardForce;
 
         projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
     }

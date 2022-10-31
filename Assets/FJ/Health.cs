@@ -9,10 +9,11 @@ namespace JAM3.Health
         public float maxHealth;
         public float currentHealth;
         bool poisonEffect;
-        bool isPoisoned;
+        public bool isPoisoned;
         void Start()
         {
             currentHealth = maxHealth;
+            poisonEffect = false;
         }
 
 
@@ -22,10 +23,9 @@ namespace JAM3.Health
             {
                 Die();
             }
-            if(isPoisoned)
-            {
-                
-            }
+            
+            
+            
         }
 
         public void TakeDamage(float damage)
@@ -40,17 +40,28 @@ namespace JAM3.Health
 
         }
 
-        public IEnumerator TakeDamageOverTime(float damage, float timebetweenticks, float duration)
+        public void TakeDamageOverTime(float damage, float timebetweenticks, float duration)
         {
             while(duration > 0)
             {
+                float aux = timebetweenticks;
                 currentHealth -= damage;
-                poisonEffect = true;
-                yield return new WaitForSeconds(timebetweenticks);
+
+                poisonEffect = false;
+                while(timebetweenticks > 0)
+                {
+                    timebetweenticks--;
+                }
+                timebetweenticks = aux;
                 poisonEffect = true;
                 duration--;
             }
-            yield return null;
+            
+        }
+
+        public void StartChildCoroutine(IEnumerator coroutine)
+        {
+            StartCoroutine(coroutine);
         }
     }
 }

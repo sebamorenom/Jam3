@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5914339596356651546}
   - component: {fileID: 7713073033141050109}
   - component: {fileID: 5913650548269039661}
+  - component: {fileID: -3215876126552415309}
   m_Layer: 0
   m_Name: dagger
   m_TagString: Untagged
@@ -159,3 +160,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16241a83630700642b16c96e7c88a701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3215876126552415309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7619250406687859405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3cfea6c64898b4a811e753e9ae4b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: Dagger
+  type: 0
+  weapType: 2
+  damageType: 0
+  consType: 0
+  statsToBuff: []
+  statsModifiers: []
+  splashRadius: 0
+  value: 0
+  price: 0
+  description: 
