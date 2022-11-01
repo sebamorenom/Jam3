@@ -32,7 +32,9 @@ public class Movement : Entity
     float mouseSensitivity;
     [Header("Utilities")]
     [SerializeField]
-    Item hands;
+    Item lHand;
+    [SerializeField]
+    Item rHand;
     [SerializeField]
     GameObject agaDer;
     [SerializeField]
@@ -254,7 +256,16 @@ public class Movement : Entity
                 auxEnemy.TakeDamage(strength + weaponLeft.value, auxPos);
             }
         }
-
+        if (lHand.HasHit(out aux, out auxPos)) 
+        {
+            Enemy auxEnemy = (Enemy)aux;
+            auxEnemy.TakeDamage(strength + lHand.value, auxPos);
+        }
+        if (rHand.HasHit(out aux, out auxPos))
+        {
+            Enemy auxEnemy = (Enemy)aux;
+            auxEnemy.TakeDamage(strength + rHand.value, auxPos);
+        }
     }
 
     public void Throw(bool leftRight)
@@ -375,24 +386,6 @@ public class Movement : Entity
 
     public void OnCollisionEnter(Collision collision)
     {
-        if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Entity"))
-        {
-            Debug.Log("Hasta aquí bien");
-            bool meleeHit = false;
-            Vector3 meleePoint = Vector3.zero;
-            for (int i = 0; i < collision.contactCount; i++)
-            {
-                if (collision.GetContact(i).otherCollider.gameObject.layer == LayerMask.NameToLayer("HitColliders"))
-                {
-                    meleeHit = true;
-                    meleePoint = collision.GetContact(i).point;
-                }
-            }
-            if (meleeHit)
-            {
-                collision.collider.GetComponent<Enemy>().TakeDamage(strength, meleePoint);
-            }
-        }
 
     }
 

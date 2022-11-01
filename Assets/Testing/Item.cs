@@ -111,6 +111,10 @@ public class Item : MonoBehaviour
                 }
                 break;
             case ItemType.Weapon:
+                if (weapType==WeaponType.Fist)
+                {
+                    Debug.Log("ManoColision");
+                }
                 if (collision.gameObject.layer == LayerMask.NameToLayer("Entity"))
                 {
                     entityHurt = collision.collider.GetComponent<Entity>();

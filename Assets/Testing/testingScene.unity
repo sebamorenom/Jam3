@@ -1510,7 +1510,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2.6093888
+  m_Height: 4
   m_Direction: 1
   m_Center: {x: 0, y: -0.8046944, z: 0}
 --- !u!54 &257430078
@@ -1547,7 +1547,8 @@ MonoBehaviour:
   movementSpeed: 12
   camTransform: {fileID: 1385093793}
   mouseSensitivity: 2
-  hands: {fileID: 0}
+  lHand: {fileID: 919132148183001929}
+  rHand: {fileID: 919132148506396565}
   agaDer: {fileID: 1746593021}
   agaIzq: {fileID: 1031384496}
   shieldPos: {fileID: 1363901610}
@@ -1587,7 +1588,7 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 1.25
-  m_Height: 3.41
+  m_Height: 5
   m_Direction: 1
   m_Center: {x: 0, y: -0.8046944, z: 0}
 --- !u!114 &257430082
@@ -2005,6 +2006,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3159056871078927284, guid: 827af2a29e31f9c43bb57ac7bf788f29,
+        type: 3}
+      propertyPath: value
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 3159056871078927285, guid: 827af2a29e31f9c43bb57ac7bf788f29,
         type: 3}
@@ -3367,7 +3373,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d87a17693e43ca640aaac32c0142abfe,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d87a17693e43ca640aaac32c0142abfe, type: 3}
@@ -4231,7 +4237,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1244991818}
   - component: {fileID: 1244991819}
-  m_Layer: 30
+  m_Layer: 29
   m_Name: Hands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6281,6 +6287,7 @@ GameObject:
   - component: {fileID: 1310447130}
   - component: {fileID: 919132148183001927}
   - component: {fileID: 919132148183001928}
+  - component: {fileID: 919132148183001929}
   m_Layer: 30
   m_Name: leftHand
   m_TagString: Untagged
@@ -6320,6 +6327,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c095722ef4618d040b273f942a79b25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &919132148183001929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148183001926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3cfea6c64898b4a811e753e9ae4b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: LeftHand
+  type: 0
+  weapType: 1
+  damageType: 0
+  consType: 0
+  statsToBuff: []
+  statsModifiers: []
+  splashRadius: 0
+  value: 0
+  price: 0
+  description: 
+  hitColliders: []
 --- !u!1 &919132148506396562
 GameObject:
   m_ObjectHideFlags: 0
@@ -6332,6 +6363,7 @@ GameObject:
   - component: {fileID: 2066673860}
   - component: {fileID: 919132148506396563}
   - component: {fileID: 919132148506396564}
+  - component: {fileID: 919132148506396565}
   m_Layer: 30
   m_Name: rightHand
   m_TagString: Untagged
@@ -6371,6 +6403,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c095722ef4618d040b273f942a79b25c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &919132148506396565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148506396562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f3cfea6c64898b4a811e753e9ae4b6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemName: RightHand
+  type: 0
+  weapType: 1
+  damageType: 0
+  consType: 0
+  statsToBuff: []
+  statsModifiers: []
+  splashRadius: 0
+  value: 0
+  price: 0
+  description: 
+  hitColliders: []
 --- !u!4 &1056631285993774197
 Transform:
   m_ObjectHideFlags: 0
