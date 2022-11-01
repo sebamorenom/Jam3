@@ -32,7 +32,7 @@ public class Ability : MonoBehaviour
 
     void Start()
     {
-        userIsPlayer = GetComponentInParent<Movement>()!=null?true:false;
+        userIsPlayer = GetComponentInParent<Movement>() != null ? true : false;
     }
 
 
@@ -53,7 +53,7 @@ public class Ability : MonoBehaviour
                 {
                     dir = (player.position - transform.position).normalized;
                 }
-                Instantiate(toSpawn).GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward);
+                Instantiate(toSpawn).GetComponent<Rigidbody>().AddForce(Camera.main.transform.forward, ForceMode.Impulse);
                 break;
             case AbilityType.RangedSpawn:
                 RaycastHit ray;
@@ -63,7 +63,7 @@ public class Ability : MonoBehaviour
             case AbilityType.Buff:
                 //GetComponentInParent<Humanoid>().Buff(statsToBuff,buffForStats);
                 break;
-                
+
         }
     }
 

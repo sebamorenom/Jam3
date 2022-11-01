@@ -5,9 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.XR;
+using Debug = UnityEngine.Debug;
 
 public enum ItemType { Weapon, Equipment, Consumable }
-public enum WeaponType { None, Fist, Dagger, Axe, Sword, Shield, Mace, GreatSword, Spear }
+public enum WeaponType { None, Fist, Dagger, Axe, Sword, Mace, Shield, TwoHanded, Spear }
 public enum EquipmentType { None, Armor, Amulet }
 public enum ConsumableType { None, HealDamage, BuffDebuff };
 public enum DamageType { None, Slashing, Blunt };
@@ -36,10 +37,15 @@ public class Item : MonoBehaviour
     public float price;
     [SerializeField]
     public string description;
+    [SerializeField]
+    public Collider[] hitColliders;
 
+    private bool isHitting;
     bool isEquipped = false;
     MeshCollider meshColl;
     BoxCollider hitColl;
+    Entity entityHurt;
+    Vector3 hurtingPos;
 
     public void Start()
     {
@@ -72,10 +78,10 @@ public class Item : MonoBehaviour
             case ConsumableType.None:
                 break;
             case ConsumableType.HealDamage:
-                //aux.health += value;
+                GetComponentInParent<Entity>().health += value;
                 break;
             case ConsumableType.BuffDebuff:
-                //aux.Buff(statsBuff,statsMods)
+                GetComponentInParent<Entity>().BuffDebuff(statsToBuff, statsModifiers, 5);
                 break;
         }
     }
@@ -92,14 +98,26 @@ public class Item : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.layer == (1 << LayerMask.NameToLayer("Entity") | 1 << LayerMask.NameToLayer("Level")))
+        switch (type)
         {
-            Collider[] affectedArray = Physics.OverlapSphere(transform.position, splashRadius, 1 << LayerMask.NameToLayer("Entity"));
-            for (int i = 0; i < affectedArray.Length; i++)
-            {
-                //affectedArray[i].GetComponent<Entity>().Buff(statsToBuff, statsMods);
-            }
+            case ItemType.Consumable:
+                if (collision.gameObject.layer == (1 << LayerMask.NameToLayer("Entity") | 1 << LayerMask.NameToLayer("Level")))
+                {
+                    Collider[] affectedArray = Physics.OverlapSphere(transform.position, splashRadius, 1 << LayerMask.NameToLayer("Entity"));
+                    for (int i = 0; i < affectedArray.Length; i++)
+                    {
+                        StartCoroutine(affectedArray[i].GetComponent<Entity>().BuffDebuff(statsToBuff, statsModifiers, 5));
+                    }
+                }
+                break;
+            case ItemType.Weapon:
+                if (collision.gameObject.layer == LayerMask.NameToLayer("Entity"))
+                {
+                    entityHurt = collision.collider.GetComponent<Entity>();
+                }
+                break;
         }
+
     }
 
     public string BuffToText()
@@ -110,5 +128,47 @@ public class Item : MonoBehaviour
             finalList += statsModifiers[i].ToString("+#;-#") + statsToBuff[i] + "\n";
         }
         return finalList.TrimEnd();
+    }
+
+    public bool HasHit(out Entity hitEntity, out Vector3 hitPoint)
+    {
+        if (entityHurt)
+        {
+            hitEntity = entityHurt;
+            hitPoint = hurtingPos;
+            entityHurt = null;
+            hurtingPos = Vector3.zero;
+            return true;
+        }
+        else
+        {
+            hitEntity = null;
+            hitPoint = Vector3.zero;
+            return false;
+        }
+    }
+
+    public bool HasHit(out Entity hitEntity)
+    {
+        if (entityHurt)
+        {
+            hitEntity = entityHurt;
+            entityHurt = null;
+            hurtingPos = Vector3.zero;
+            return true;
+        }
+        else
+        {
+            hitEntity = null;
+            return false;
+        }
+    }
+
+    public void SwitchHitColliders()
+    {
+        foreach (Collider coll in hitColliders)
+        {
+            coll.enabled = !coll.enabled;
+        }
     }
 }
