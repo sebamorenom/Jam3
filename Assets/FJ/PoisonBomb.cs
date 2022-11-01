@@ -31,6 +31,7 @@ public class PoisonBomb : MonoBehaviour
 
         if (duration <= 0)
         {
+            
             foreach(Collider c in objectives)
             {
                 c.gameObject.GetComponent<Health>().currentHealth = c.gameObject.GetComponent<Health>().currentHealth;
