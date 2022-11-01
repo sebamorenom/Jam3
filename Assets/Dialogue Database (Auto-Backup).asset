@@ -444,7 +444,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: "Why? Don\xB4t you trust me?"
+        value: "Don\xB4t you trust me?"
         type: 0
         typeString: 
       - title: Sequence
@@ -473,7 +473,7 @@ MonoBehaviour:
     - id: 5
       fields:
       - title: Title
-        value: 
+        value: Loop
         type: 0
         typeString: 
       - title: Description
@@ -556,11 +556,11 @@ MonoBehaviour:
     - id: 6
       fields:
       - title: Title
-        value: 
+        value: Waiting
         type: 0
         typeString: 
       - title: Description
-        value: Waiting
+        value: 
         type: 0
         typeString: 
       - title: Actor
@@ -572,7 +572,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Waiting
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -770,7 +770,7 @@ MonoBehaviour:
     - id: 4
       fields:
       - title: Title
-        value: 
+        value: Bucle
         type: 0
         typeString: 
       - title: Description
@@ -786,7 +786,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Bucle
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
@@ -935,7 +935,7 @@ MonoBehaviour:
     - id: 7
       fields:
       - title: Title
-        value: 
+        value: Loop
         type: 0
         typeString: 
       - title: Description
@@ -951,7 +951,7 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: Loop
+        value: 
         type: 0
         typeString: 
       - title: Dialogue Text
