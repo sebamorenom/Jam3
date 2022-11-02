@@ -1,3 +1,4 @@
+using MoreMountains.Feedbacks;
 using PixelCrushers.DialogueSystem.Demo;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +20,7 @@ public class Enemy : Entity
 
 
     public GameObject player;
+    private MMF_Player audioPlayer;
     private NavMeshAgent nav;
     void Start()
     {
@@ -57,6 +59,7 @@ public class Enemy : Entity
 
     public void TakeDamage(float damage, Vector3 collisionPoint)
     {
+        audioPlayer.PlayFeedbacks();
         health -= damage - damage * (protection / 100);
         if (health <= 0)
         {
@@ -67,7 +70,6 @@ public class Enemy : Entity
 
     public void Die(Vector3 collPoint, float explosionForce)
     {
-        Debug.Log("Muerto");
         ToggleRagdoll(true);
         nav.enabled = false;
         foreach (Rigidbody rb in rbRagdolls)
