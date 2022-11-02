@@ -78,10 +78,10 @@ public class Scanner : MonoBehaviour
                         wallet.TryToBuy(boxSelected);
                         wantPickUp = false;
                     }
-                    lastSeenItem = boxSelected.objInside.GetComponent<Item>();
+                    //lastSeenItem = boxSelected.objInside.GetComponent<Item>();
                 }
 
-                if (hit.collider.gameObject.TryGetComponent<Item>(out lastSeenItem))
+                else if (hit.collider.gameObject.TryGetComponent<Item>(out lastSeenItem))
                 {
                     if (wantPickUp)
                     {

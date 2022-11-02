@@ -26,9 +26,11 @@ public class Merchant : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag.Contains("Weapon"))
+        Debug.Log(other.gameObject.layer + " + " + LayerMask.NameToLayer("Item"));
+        if (other.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
             curr.Exchange(transform.position + transform.forward, other.gameObject.GetComponent<Item>().price);
+            Destroy(other.gameObject);
         }
     }
 
@@ -57,30 +59,7 @@ public class Merchant : MonoBehaviour
         }
     }
 
-}
-public class MerchantBox : MonoBehaviour
-{
-    public Merchant seller;
-    public GameObject objInside;
-    public int index;
-    public float price;
 
-    public void Fill(GameObject obj, int pos, Merchant mer)
-    {
-        obj.transform.parent = transform;
-        obj.transform.position = transform.position;
-        obj.transform.rotation = transform.rotation;
-        obj.GetComponent<Rigidbody>().isKinematic = false;
-        seller = mer;
-        Item auxItem = obj.GetComponent<Item>();
-        price = auxItem.price;
-        index = pos;
-    }
-
-    public void Sold()
-    {
-        objInside.transform.parent = null;
-        objInside.GetComponent<Rigidbody>().isKinematic = false;
-    }
 
 }
+

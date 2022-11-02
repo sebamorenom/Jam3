@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5a74c9f4a1cb834eaa523047324af2d, type: 3}
   m_Name: MerchantStash
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - {fileID: 4414402555072021014, guid: 2509818cd17f2f044ba3c8a5ac8cc3e3, type: 3}

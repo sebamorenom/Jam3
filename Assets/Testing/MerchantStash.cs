@@ -17,7 +17,7 @@ public class MerchantStash : ScriptableObject
         GameObject[] aux = new GameObject[(int)numObjects];
         for (int i = 0; i < numObjects; i++)
         {
-            aux[i]=items[Random.Range(0, items.Length)];
+            aux[i]=Instantiate(items[Random.Range(0, items.Length)]);
         }
         return aux;
     }
