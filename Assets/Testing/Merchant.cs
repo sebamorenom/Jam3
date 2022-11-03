@@ -26,7 +26,6 @@ public class Merchant : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.layer + " + " + LayerMask.NameToLayer("Item"));
         if (other.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
             curr.Exchange(transform.position + transform.forward, other.gameObject.GetComponent<Item>().price);
