@@ -25,6 +25,8 @@ public class Movement : Entity
     [Header("Movement Parameters")]
     [SerializeField]
     float movementSpeed;
+    [SerializeField]
+    float jumpForce;
     [Header("Camera Parameters")]
     [SerializeField]
     Transform camTransform;
@@ -58,6 +60,7 @@ public class Movement : Entity
     public bool wantsThrowLeft = false;
     public bool wantsThrowRight = false;
     public bool wantsPrimaryAction = false;
+    public bool wantsJump = false;
 
     // Start is called before the first frame update
     void Start()
@@ -104,6 +107,11 @@ public class Movement : Entity
         rb.AddForce(speed, ForceMode.Force);
     }
 
+    public void Jump()
+    {
+        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+    }
+
     IEnumerator CheckLastSeenObject()
     {
         GameObject aux = null;
@@ -114,7 +122,6 @@ public class Movement : Entity
             scan.GetLastSeenItem(out aux, out auxWeapType, out flip);
             if (aux != null)
             {
-                Debug.Log(hSituation);
                 if (agaDer.transform.childCount == 0)
                 {
                     switch (hSituation)
@@ -256,7 +263,7 @@ public class Movement : Entity
                 auxEnemy.TakeDamage(strength + weaponLeft.value, auxPos);
             }
         }
-        if (lHand.HasHit(out aux, out auxPos)) 
+        if (lHand.HasHit(out aux, out auxPos))
         {
             Enemy auxEnemy = (Enemy)aux;
             auxEnemy.TakeDamage(strength + lHand.value, auxPos);
@@ -334,6 +341,12 @@ public class Movement : Entity
         movVect = inputVect.x * transform.right + inputVect.z * transform.forward;
     }
 
+    public void GetJumpImput()
+    {
+        if (wantsJump)
+            Jump();
+        wantsJump = false;
+    }
     public void GetCameraInputs()
     {
         camMov = new Vector2(Input.GetAxis("Mouse X") * mouseSensitivity, Input.GetAxis("Mouse Y") * mouseSensitivity);
