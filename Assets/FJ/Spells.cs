@@ -6,7 +6,7 @@ using UnityEngine;
 public class Spells : Ability
 {
     public GameObject prefab;
-    public Transform shootingPoint;
+    public Transform grabCollider;
     public Transform cam;
     public float throwForce;
     public float throwUpdwardForce;
@@ -15,16 +15,16 @@ public class Spells : Ability
 
     public override void Activate(GameObject parent)
     {
-        shootingPoint = parent.transform.GetChild(4);
+        grabCollider = parent.GetComponentInChildren<Transform>();
         cam = parent.GetComponentInChildren<Camera>().transform;
-        GameObject projectile  = Instantiate(prefab, shootingPoint.transform.position, Quaternion.identity);
+        GameObject projectile  = Instantiate(prefab, grabCollider.transform.position, cam.rotation);
         projectileRb = projectile.GetComponent<Rigidbody>();
         Vector3 forceDirection = cam.transform.forward;
 
         RaycastHit hit;
         if (Physics.Raycast(cam.position, cam.forward, out hit, 500f))
         {
-            forceDirection = (hit.point - shootingPoint.transform.position).normalized;
+            forceDirection = (hit.point - grabCollider.transform.position).normalized;
         }
 
         

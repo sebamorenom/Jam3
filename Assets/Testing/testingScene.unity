@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1554,8 +1554,7 @@ MonoBehaviour:
   value: 1000
   price: 100
   description: 
-  hitColliders:
-  - {fileID: 1910864196}
+  hitColliders: []
 --- !u!54 &252412004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1587,6 +1586,7 @@ GameObject:
   - component: {fileID: 257430081}
   - component: {fileID: 257430080}
   - component: {fileID: 257430082}
+  - component: {fileID: 257430084}
   - component: {fileID: 257430083}
   m_Layer: 31
   m_Name: Player
@@ -1751,6 +1751,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &257430084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257430075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6132ce70621522459f5642d394941ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 11400000, guid: 5549feaaa8349714898fc881732c1697, type: 2}
+  key: 304
 --- !u!1 &281597984
 GameObject:
   m_ObjectHideFlags: 0
@@ -6409,8 +6423,7 @@ MonoBehaviour:
   value: 20
   price: 25
   description: 
-  hitColliders:
-  - {fileID: 1399240771}
+  hitColliders: []
 --- !u!54 &1981364749
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6667,8 +6680,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 0.25
-        MaxVolume: 0.5
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -6778,8 +6791,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 0.3
-        MaxVolume: 0.5
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -7000,8 +7013,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.1
+        MaxVolume: 0.2
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -7109,8 +7122,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -8891,8 +8904,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 0.25
-        MaxVolume: 0.5
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -9002,8 +9015,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 0.3
-        MaxVolume: 0.5
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -9223,8 +9236,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -9332,8 +9345,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}

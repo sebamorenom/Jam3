@@ -16,7 +16,8 @@ MonoBehaviour:
   coolDown: 3
   activeTime: 1
   prefab: {fileID: 390504344961997711, guid: 1120a2dffe1b0db47b154416eda7adfd, type: 3}
-  shootingPoint: {fileID: 0}
+  grabCollider: {fileID: 0}
   cam: {fileID: 0}
   throwForce: 20
-  damage: 0
+  throwUpdwardForce: 0
+  damage: 10
