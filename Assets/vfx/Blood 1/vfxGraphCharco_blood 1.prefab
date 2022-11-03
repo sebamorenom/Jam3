@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6839902642382945297
+--- !u!1 &6213238270941928161
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6839902642382945300}
-  - component: {fileID: 6839902642382945303}
-  - component: {fileID: 6839902642382945302}
+  - component: {fileID: 9011020951085476365}
+  - component: {fileID: 2122913370774345515}
+  - component: {fileID: 1795817865306135239}
   m_Layer: 0
-  m_Name: vfxGraph_blood
+  m_Name: vfxGraphCharco_blood 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6839902642382945300
+--- !u!4 &9011020951085476365
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6839902642382945297}
+  m_GameObject: {fileID: 6213238270941928161}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: -0.029, z: 2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.116, y: 0.14, z: 2.66}
+  m_LocalScale: {x: 4.1079564, y: 2.3081, z: 4.433053}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!2083052967 &6839902642382945303
+--- !u!2083052967 &2122913370774345515
 VisualEffect:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6839902642382945297}
+  m_GameObject: {fileID: 6213238270941928161}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: 7eedb5d794488da4a9cc0e20e73edae2, type: 3}
   m_InitialEventName: OnPlay
@@ -49,11 +49,17 @@ VisualEffect:
   m_ResourceVersion: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 570.9
+        m_Name: Rate
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.5, y: 0.5, z: 5}
+        m_Name: BloodVelocity
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -69,15 +75,18 @@ VisualEffect:
     m_NamedObject:
       m_Array: []
     m_Bool:
-      m_Array: []
---- !u!73398921 &6839902642382945302
+      m_Array:
+      - m_Value: 1
+        m_Name: Loop
+        m_Overridden: 1
+--- !u!73398921 &1795817865306135239
 VFXRenderer:
   serializedVersion: 1
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6839902642382945297}
+  m_GameObject: {fileID: 6213238270941928161}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
