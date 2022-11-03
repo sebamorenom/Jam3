@@ -7,7 +7,10 @@ using DialogueDatabase = PixelCrushers.DialogueSystem.DialogueDatabase;
 
 public class DialogueTesting : MonoBehaviour
 {
-
+    [SerializeField]
+    string variableName;
+    [SerializeField]
+    TMPro.TextMeshProUGUI tmPro;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,17 +19,6 @@ public class DialogueTesting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Activate();
+        tmPro.SetText(DialogueLua.GetVariable(variableName).asString);
     }
-
-    public void Activate()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-        {
-            DialogueLua.SetVariable("Test", !DialogueLua.GetVariable("Test").asBool);
-            Debug.Log(DialogueLua.GetVariable("Test").asString);
-            Sequencer.Message("Continue");
-        }
-    }
-
 }
