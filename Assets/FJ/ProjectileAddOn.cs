@@ -25,7 +25,7 @@ public class ProjectileAddOn : MonoBehaviour
             targetHit = true;
 
         //make sure projectile sticks to surface
-        collision.gameObject.GetComponentInChildren<Collider>();
+
         rb.isKinematic = true;
         rb.useGravity = false;
         rb.velocity = Vector3.zero;
@@ -35,7 +35,7 @@ public class ProjectileAddOn : MonoBehaviour
 
 
         //make sure projectile moves with target
-        Debug.Log(collision);
+        
         transform.SetParent(collision.transform);
         
 
