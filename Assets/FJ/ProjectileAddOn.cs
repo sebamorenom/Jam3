@@ -26,7 +26,8 @@ public class ProjectileAddOn : MonoBehaviour
 
         //make sure projectile sticks to surface
         rb.isKinematic = true;
-        //collision.gameObject.GetComponent<Health>().TakeDamage(item.d);
+        Vector3 aux = collision.GetContact(0).point;
+        collision.gameObject.GetComponent<Enemy>().TakeDamage(item.value, aux);
         
 
         //make sure projectile moves with target

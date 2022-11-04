@@ -82,6 +82,7 @@ public class Enemy : Entity
             posConstraint.enabled = false;
         audioPlayer.GetFeedbackOfType<MMF_MMSoundManagerSound>("Dying").Play(transform.position);
         ToggleRagdoll(true);
+        Debug.Log("Muere");
         StopCoroutine(noise);
         nav.enabled = false;
         foreach (Rigidbody rb in rbRagdolls)

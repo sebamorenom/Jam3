@@ -7,6 +7,8 @@ public class Entity : MonoBehaviour
 {
     [Header("Stats")]
     [SerializeField]
+    public float maxHealth;
+    [SerializeField]
     public float health;
     [SerializeField]
     public float strength;
@@ -15,7 +17,7 @@ public class Entity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -53,6 +55,7 @@ public class Entity : MonoBehaviour
         float endTime = Time.fixedTime + buffDuration;
         for (int i = 0; i < statsToBuff.Length; i++)
         {
+            
             this.GetType().GetField(statsToBuff[i]).SetValue(this, (float)this.GetType().GetField(statsToBuff[i]).GetValue(this) + buffModifiers[i]);
         }
         if (protection > 100)
@@ -62,7 +65,25 @@ public class Entity : MonoBehaviour
         for (; ; )
         {
             if (Time.fixedTime >= endTime)
+            {
+                //Debug.Log("buffos quitados");   
+                for (int i = 0; i < statsToBuff.Length; i++)
+                {
+                    if (statsToBuff[i] == "health" && health - buffModifiers[i] <= 0)
+                    {
+                        
+                    }
+                    else
+                    {
+                        this.GetType().GetField(statsToBuff[i]).SetValue(this, (float)this.GetType().GetField(statsToBuff[i]).GetValue(this) - buffModifiers[i]);
+                    }
+                    
+                    
+                }
+                
                 yield break;
+            }
+
             yield return null;
         }
     }

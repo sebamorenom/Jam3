@@ -16,8 +16,8 @@ public class Spells : Ability
     public override void Activate(GameObject parent)
     {
         grabCollider = parent.GetComponentInChildren<Transform>();
-        cam = parent.GetComponentInChildren<Camera>().transform;
-        GameObject projectile  = Instantiate(prefab, grabCollider.transform.position, cam.rotation);
+        cam = parent.GetComponentInParent<Camera>().transform;
+        GameObject projectile  = Instantiate(prefab, grabCollider.transform.position + new Vector3(0,0,0.5f), cam.rotation);
         projectileRb = projectile.GetComponent<Rigidbody>();
         Vector3 forceDirection = cam.transform.forward;
 

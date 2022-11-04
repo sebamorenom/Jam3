@@ -10,9 +10,14 @@ public class SpellAddOn : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        GetComponent<Rigidbody>().isKinematic = true;
-        GetComponentInChildren<VisualEffect>().Play();
-        Destroy(gameObject, 0.5f);
-        collision.gameObject.GetComponent<Entity>().TakeDamage(spell.damage);
+        if(collision.gameObject.layer == 27)
+        {
+            GetComponent<Rigidbody>().isKinematic = true;
+            GetComponentInChildren<VisualEffect>().Play();
+            Destroy(gameObject, 0.5f);
+            Vector3 aux = collision.GetContact(0).point;
+            collision.gameObject.GetComponent<Enemy>().TakeDamage(spell.damage,aux);
+        }
+        
     }
 }
