@@ -20,12 +20,44 @@ public class Enemy : Entity
     Rigidbody[] rbRagdolls;
     Collider[] rbColliders;
     private IEnumerator noise;
+    private IEnumerator attackRange;
 
 
     public GameObject player;
     private MMF_Player audioPlayer;
     private NavMeshAgent nav;
     private PositionConstraint posConstraint;
+
+
+    IEnumerator LookForPlayer()
+    {
+        for (; ; )
+        {
+            Collider[] aux = Physics.OverlapSphere(transform.position, 5, LayerMask.NameToLayer("Entity"));
+            foreach (Collider coll in aux)
+            {
+                if (coll.tag.Contains("Player") && player == null)
+                {
+                    player = coll.gameObject;
+                    yield break;
+                }
+            }
+            yield return new WaitForSeconds(0.3f);
+        }
+    }
+
+    IEnumerator CheckAttackRange()
+    {
+        for (; ; )
+        {
+            if (player != null && Vector3.Distance(transform.position, player.transform.position) < 2f)
+            {
+                anim.Play("Attack");
+            }
+            yield return new WaitForSeconds(Random.Range(1f, 3f));
+        }
+    }
+
     void Start()
     {
         anim = GetComponentInParent<Animator>();
@@ -36,8 +68,10 @@ public class Enemy : Entity
         audioPlayer = GetComponent<MMF_Player>();
         transform.GetChild(0).TryGetComponent<PositionConstraint>(out posConstraint);
         noise = RandomNoise();
+        attackRange = CheckAttackRange();
         StartCoroutine(noise);
-
+        StartCoroutine(LookForPlayer());
+        StartCoroutine(attackRange);
     }
 
     // Update is called once per frame
@@ -83,6 +117,7 @@ public class Enemy : Entity
         audioPlayer.GetFeedbackOfType<MMF_MMSoundManagerSound>("Dying").Play(transform.position);
         ToggleRagdoll(true);
         StopCoroutine(noise);
+        StopCoroutine(attackRange);
         nav.enabled = false;
         foreach (Rigidbody rb in rbRagdolls)
         {
@@ -96,6 +131,7 @@ public class Enemy : Entity
             posConstraint.enabled = false;
         audioPlayer.GetFeedbackOfType<MMF_MMSoundManagerSound>("Dying").Play(transform.position);
         StopCoroutine(noise);
+        StopCoroutine(attackRange);
         ToggleRagdoll(true);
         nav.enabled = false;
     }

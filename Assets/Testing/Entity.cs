@@ -62,7 +62,14 @@ public class Entity : MonoBehaviour
         for (; ; )
         {
             if (Time.fixedTime >= endTime)
+            {
+                for (int i = 0; i < statsToBuff.Length; i++)
+                {
+                    this.GetType().GetField(statsToBuff[i]).SetValue(this, (float)this.GetType().GetField(statsToBuff[i]).GetValue(this) - buffModifiers[i]);
+                }
                 yield break;
+            }
+
             yield return null;
         }
     }

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e90a81f56ccc8264f9baae1e90a9ea4b, type: 3}
   m_Name: EnemySpawnPool
   m_EditorClassIdentifier: 
-  enemies: []
-  spawningCosts: []
+  enemies:
+  - {fileID: 845365825600661452, guid: 3d7b8c8f855776b42aa33d43f30b63f6, type: 3}
+  - {fileID: 915074300681250951, guid: 26c5e190b9c12494ab997219c3b2271d, type: 3}
+  spawningProbabilities:
+  - 25
+  - 75

@@ -6,6 +6,9 @@ public class Spawner : MonoBehaviour
 {
     [SerializeField]
     SpawnableEnemyPool pool;
+    [SerializeField]
+    GameObject player;
+    public bool testingSpawn;
     private float availablePoints;
     // Start is called before the first frame update
     void Start()
@@ -16,16 +19,22 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (testingSpawn)
+        {
+            Spawn();
+            testingSpawn = false;
+        }
     }
 
-    public void SetAvailablePoints(float points)
-    {
-        availablePoints = points;
-    }
     public void Spawn()
     {
-        //Instantiate(pool.GetEnemy(availablePoints));
+        Enemy auxEnemy = Instantiate(pool.GetRandomEnemyForProbability()).GetComponent<Enemy>();
+        auxEnemy.player = player;
+    }
+
+    public void SetPlayer(GameObject _player)
+    {
+        player = _player;
     }
 
 }

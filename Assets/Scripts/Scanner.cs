@@ -1,4 +1,5 @@
 using Language.Lua;
+using Opsive.UltimateInventorySystem.UI.Menus.Chest;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -42,6 +43,7 @@ public class Scanner : MonoBehaviour
     private Item leftHandItem;
     private Item rightHandItem;
 
+    private ChestUsable chestSelected;
     private MerchantBox boxSelected;
     private Item lastSeenItem;
     private Item toPickUp;
@@ -71,6 +73,16 @@ public class Scanner : MonoBehaviour
             RaycastHit hit;
             if (Physics.BoxCast(transform.position, Vector3.one, Camera.main.transform.forward, out hit, Quaternion.identity, scanDistance, 1 << LayerMask.NameToLayer("Item")))
             {
+                if (hit.collider.gameObject.TryGetComponent<ChestUsable>(out chestSelected))
+                {
+                    if (wantPickUp)
+                    {
+                        chestSelected.Open();
+                        wantPickUp = false;
+                    }
+
+                }
+                chestSelected = null;
                 if (hit.collider.gameObject.TryGetComponent<MerchantBox>(out boxSelected))
                 {
                     if (wantPickUp)
@@ -120,7 +132,7 @@ public class Scanner : MonoBehaviour
                                     damageTypeUI.text = analyzedItem.damageType + " damage";
                                     break;
                             }
-                            CompareValue(analyzedItem);
+                            //CompareValue(analyzedItem);
                             break;
 
                         case ItemType.Equipment:

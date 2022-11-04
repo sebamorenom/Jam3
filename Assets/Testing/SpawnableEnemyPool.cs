@@ -16,23 +16,22 @@ public class SpawnableEnemyPool : ScriptableObject
 
     public void GetEnemies(ref GameObject[] spawningPoints)
     {
-        float maxPerSpawn = spawningProbabilities[spawningProbabilities.Length - 1] - spawningPoints.Length;
         for (int i = 0; i < spawningPoints.Length; i++)
         {
-            spawningPoints[i] = Instantiate(GetRandomEnemyForProbability(maxPerSpawn));
+            spawningPoints[i] = Instantiate(GetRandomEnemyForProbability());
         }
     }
-    public GameObject GetRandomEnemyForProbability(float cost)
+    public GameObject GetRandomEnemyForProbability()
     {
         float sumProb = 0 + roomCount / 100;
         float randNumb = Random.value;
         for (int i = 0; i < enemies.Length; i++)
         {
-            if (spawningProbabilities[i] + sumProb >= randNumb)
+            if (spawningProbabilities[i] / 100 + sumProb >= randNumb)
             {
                 return enemies[i];
             }
-            sumProb += spawningProbabilities[i];
+            sumProb += spawningProbabilities[i] / 100;
         }
         return null;
     }

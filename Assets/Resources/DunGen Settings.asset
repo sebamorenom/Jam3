@@ -27,5 +27,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSocket: {fileID: -2733170385531042601}
   tagManager:
-    keys: 
-    values: []
+    keys: 000000000100000002000000030000000400000005000000
+    values:
+    - Shop
+    - Miniboss
+    - Boss
+    - Rest
+    - Initial
+    - Middle

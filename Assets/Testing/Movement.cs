@@ -78,6 +78,7 @@ public class Movement : Entity
     void Update()
     {
         GetInputs();
+        GetJumpImput();
         GetCameraInputs();
         MoveCamera();
         GetPrimaryAttackInput();
