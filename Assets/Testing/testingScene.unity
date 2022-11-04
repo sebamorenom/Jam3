@@ -1585,6 +1585,7 @@ GameObject:
   - component: {fileID: 257430079}
   - component: {fileID: 257430081}
   - component: {fileID: 257430080}
+  - component: {fileID: 257430084}
   - component: {fileID: 257430082}
   - component: {fileID: 257430083}
   m_Layer: 27
@@ -1751,6 +1752,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &257430084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 257430075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54e93ff04f5b2941a7cf06bed7044e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1385093793}
+  attackPoint: {fileID: 7209217883858951647}
+  objectToThrow: {fileID: 7619250406687859405, guid: ad474bf3cbca44d43aba3e3ec0784db3,
+    type: 3}
+  item: {fileID: 0}
+  totalThrows: 20
+  throwCoolDown: 0.25
+  throwKey: 116
+  throwForce: 40
+  throwUpwardForce: 0
 --- !u!1 &281597984
 GameObject:
   m_ObjectHideFlags: 0
