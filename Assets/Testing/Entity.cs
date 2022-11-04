@@ -7,6 +7,8 @@ public class Entity : MonoBehaviour
 {
     [Header("Stats")]
     [SerializeField]
+    public float maxHealth;
+    [SerializeField]
     public float health;
     [SerializeField]
     public float strength;
@@ -15,7 +17,7 @@ public class Entity : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        health = maxHealth;
     }
 
     // Update is called once per frame

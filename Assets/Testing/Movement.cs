@@ -2,17 +2,18 @@ using DunGen.Demo;
 using MeshCombineStudio;
 using Newtonsoft.Json;
 using Opsive.UltimateInventorySystem.DropsAndPickups;
+using Rewired;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Networking;
 using UnityEngine.Rendering.Universal.Internal;
 using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
-
-
+using Image = UnityEngine.UI.Image;
 
 public class Movement : Entity
 {
@@ -47,6 +48,8 @@ public class Movement : Entity
     CollSwitcher[] collSwitchers;
     [SerializeField]
     Animator[] handAnimators;
+    [SerializeField]
+    Image healthBar;
 
 
     private HandSituation hSituation = HandSituation.Free;
@@ -83,6 +86,7 @@ public class Movement : Entity
         MoveCamera();
         GetPrimaryAttackInput();
         GetThrowingInputs();
+        HealthBarUpdater();
     }
 
     private void FixedUpdate()
@@ -340,6 +344,8 @@ public class Movement : Entity
     {
         inputVect = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         movVect = inputVect.x * transform.right + inputVect.z * transform.forward;
+        if (Input.GetKeyDown(KeyCode.Space))
+            wantsJump = true;
     }
 
     public void GetJumpImput()
@@ -408,5 +414,10 @@ public class Movement : Entity
         wantsPrimaryAction = false;
         wantsThrowRight = false;
         wantsThrowLeft = false;
+    }
+
+    public void HealthBarUpdater()
+    {
+        healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1f);
     }
 }

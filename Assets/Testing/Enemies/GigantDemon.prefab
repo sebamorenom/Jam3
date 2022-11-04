@@ -1039,8 +1039,8 @@ MonoBehaviour:
         DebugActive: 0
         Sfx: {fileID: 0}
         RandomSfx:
-        - {fileID: 8300000, guid: 56cd4593545c6bc41aab42b66713fe5d, type: 3}
-        - {fileID: 8300000, guid: 72a91b193d5f8f9458618f8e89c260cc, type: 3}
+        - {fileID: 8300000, guid: 63fa143613516dc40bd0daf33fc1af69, type: 3}
+        - {fileID: 8300000, guid: 3a563ac2c0607ff4690aaaea1f8a611c, type: 3}
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -1150,8 +1150,8 @@ MonoBehaviour:
         DebugActive: 0
         Sfx: {fileID: 0}
         RandomSfx:
-        - {fileID: 8300000, guid: 26913ca25ad3196468f4306978f49051, type: 3}
-        - {fileID: 8300000, guid: 8d569c48ad98f6d4682eaf71dd76225a, type: 3}
+        - {fileID: 8300000, guid: aa53ec64003e3c64da947aeef57895af, type: 3}
+        - {fileID: 8300000, guid: 3c2cbbfd53d0da54eb0e4bce89e9b7bc, type: 3}
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -1259,10 +1259,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 3281763650644562684}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 82a93f2da21602e4cb671c6afd53f129, type: 3}
-        - {fileID: 8300000, guid: 28c2cbab54d5d3944a7b30c92bb5d6c7, type: 3}
+        Sfx: {fileID: 8300000, guid: 469a0e000513fa341b3f1aaa1f011ba8, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -1372,8 +1370,8 @@ MonoBehaviour:
         DebugActive: 0
         Sfx: {fileID: 0}
         RandomSfx:
-        - {fileID: 8300000, guid: c90edb2dd242bb646957be3baf02f3c5, type: 3}
-        - {fileID: 8300000, guid: 8adeb7db977d7ce4488f4c870130132a, type: 3}
+        - {fileID: 8300000, guid: 0ded74ee8534d7f4a8778cbec2f23e12, type: 3}
+        - {fileID: 8300000, guid: 3dc7c24ffba2e1642a7268ec70097de8, type: 3}
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -1481,7 +1479,7 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 3281763650644562684}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 76288c371f3f9034c84a9aacf3918543, type: 3}
+        Sfx: {fileID: 8300000, guid: 59b9cf4923e174e44ac9291548d5019c, type: 3}
         RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
@@ -1573,6 +1571,28 @@ MonoBehaviour:
   rb: {fileID: 7804324175715525039}
   rbColl: {fileID: 325437609744166214}
   player: {fileID: 0}
+--- !u!195 &2737054516323294515
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8300887602194803529}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 4
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!4 &8681108191246004723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 59d087dde861d574fa88317d2df00b5a,

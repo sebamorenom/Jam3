@@ -12,13 +12,16 @@ public class Enemy : Entity
     // Start is called before the first frame update
 
     private Animator anim;
-    [Header("Animator paramters")]
+    [Header("Animator parameters")]
     [SerializeField]
     Rigidbody rb;
     [SerializeField]
     Collider rbColl;
     Rigidbody[] rbRagdolls;
     Collider[] rbColliders;
+    [SerializeField]
+    Collider attackTrigger;
+
     private IEnumerator noise;
     private IEnumerator attackRange;
 
@@ -33,7 +36,7 @@ public class Enemy : Entity
     {
         for (; ; )
         {
-            Collider[] aux = Physics.OverlapSphere(transform.position, 5, LayerMask.NameToLayer("Entity"));
+            Collider[] aux = Physics.OverlapSphere(transform.position, 6, LayerMask.NameToLayer("Entity"));
             foreach (Collider coll in aux)
             {
                 if (coll.tag.Contains("Player") && player == null)
@@ -50,7 +53,7 @@ public class Enemy : Entity
     {
         for (; ; )
         {
-            if (player != null && Vector3.Distance(transform.position, player.transform.position) < 2f)
+            if (player != null && Vector3.Distance(transform.position, player.transform.position) < 5f)
             {
                 anim.Play("Attack");
             }
@@ -169,6 +172,19 @@ public class Enemy : Entity
                 audioPlayer.GetFeedbackOfType<MMF_MMSoundManagerSound>("Noise").Play(transform.position);
             }
             yield return new WaitForSeconds(1f);
+        }
+    }
+
+    public void SwitchAttackTrigger()
+    {
+        attackTrigger.enabled = !attackTrigger.enabled;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Entity") && other.gameObject.tag.Contains("Player"))
+        {
+            other.GetComponent<Movement>().TakeDamage(strength);
         }
     }
 }

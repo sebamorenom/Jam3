@@ -79,6 +79,7 @@ GameObject:
   - component: {fileID: 2670931275245630205}
   - component: {fileID: 2655387356913046344}
   - component: {fileID: 4436364682284464233}
+  - component: {fileID: 496717725923064807}
   m_Layer: 0
   m_Name: demon2@Neutral Idle (1)
   m_TagString: Untagged
@@ -134,9 +135,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.02
-  m_Height: 0.085
+  m_Height: 0.08
   m_Direction: 1
-  m_Center: {x: 0, y: 0.03, z: 0}
+  m_Center: {x: 0, y: 0.035, z: 0}
 --- !u!54 &2670931275245630205
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -251,10 +252,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 2655387356913046344}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 56cd4593545c6bc41aab42b66713fe5d, type: 3}
-        - {fileID: 8300000, guid: 72a91b193d5f8f9458618f8e89c260cc, type: 3}
+        Sfx: {fileID: 8300000, guid: f620605308fb9d1439da6aa0abc1da84, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -362,10 +361,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 2655387356913046344}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 26913ca25ad3196468f4306978f49051, type: 3}
-        - {fileID: 8300000, guid: 8d569c48ad98f6d4682eaf71dd76225a, type: 3}
+        Sfx: {fileID: 8300000, guid: 305374d301f4ada4c8acbe4eb5dac5f4, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -473,10 +470,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 2655387356913046344}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 82a93f2da21602e4cb671c6afd53f129, type: 3}
-        - {fileID: 8300000, guid: 28c2cbab54d5d3944a7b30c92bb5d6c7, type: 3}
+        Sfx: {fileID: 8300000, guid: 1a0d73173b8ca7e488dfa76066b041da, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -584,10 +579,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 2655387356913046344}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: c90edb2dd242bb646957be3baf02f3c5, type: 3}
-        - {fileID: 8300000, guid: 8adeb7db977d7ce4488f4c870130132a, type: 3}
+        Sfx: {fileID: 8300000, guid: e70ea523f59ed0c4fa16671cf8a8165e, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -695,7 +688,7 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 2655387356913046344}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 76288c371f3f9034c84a9aacf3918543, type: 3}
+        Sfx: {fileID: 8300000, guid: 7cf446c88876cc040a5e0092ddbacfdd, type: 3}
         RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
@@ -787,6 +780,28 @@ MonoBehaviour:
   rb: {fileID: 2670931275245630205}
   rbColl: {fileID: 5880719626683024478}
   player: {fileID: 0}
+--- !u!195 &496717725923064807
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212418987925468198}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &877324911831157553
 GameObject:
   m_ObjectHideFlags: 0

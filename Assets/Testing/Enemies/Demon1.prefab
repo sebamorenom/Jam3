@@ -502,6 +502,24 @@ CapsuleCollider:
   m_Height: 0.08
   m_Direction: 1
   m_Center: {x: 0, y: 0.035, z: 0}
+--- !u!114 &1323101474662989033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4381615237024561732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c48a9ea983ace64d835c71e67fd4f8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  strength: 3
+  protection: 1
+  rb: {fileID: 3463257145002162005}
+  rbColl: {fileID: 3463257145002162004}
+  player: {fileID: 0}
 --- !u!114 &7718419142534122735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,10 +618,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 7718419142534122735}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: fbe08366c255b3345b0c27bb0277cac8, type: 3}
-        - {fileID: 8300000, guid: 9287676076f4e694faab99884e73ae0d, type: 3}
+        Sfx: {fileID: 8300000, guid: 9287676076f4e694faab99884e73ae0d, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -714,7 +730,6 @@ MonoBehaviour:
         Sfx: {fileID: 0}
         RandomSfx:
         - {fileID: 8300000, guid: d454fc3361436a840adf83ba9b79688c, type: 3}
-        - {fileID: 8300000, guid: 8bd88a9e2f0d4284c8938b76acdefddb, type: 3}
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -931,10 +946,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 7718419142534122735}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: cb2d6e09b8f193341af934f3a97e58ef, type: 3}
-        - {fileID: 8300000, guid: 247ddfb6c924f924f9e8c0d9fcd9e6ec, type: 3}
+        Sfx: {fileID: 8300000, guid: 247ddfb6c924f924f9e8c0d9fcd9e6ec, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -1116,24 +1129,28 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
---- !u!114 &1323101474662989033
-MonoBehaviour:
+--- !u!195 &1122810278374225705
+NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4381615237024561732}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c48a9ea983ace64d835c71e67fd4f8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
-  strength: 3
-  protection: 1
-  rb: {fileID: 3463257145002162005}
-  rbColl: {fileID: 3463257145002162004}
-  player: {fileID: 0}
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 3
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &4542714318615501087 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1082271958561512970, guid: 0c2c5640327cd4740a682bc95f4fe3aa,

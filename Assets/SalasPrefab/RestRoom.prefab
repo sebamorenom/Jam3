@@ -23081,7 +23081,7 @@ MonoBehaviour:
   BlockerSceneObjects: []
   Tags:
     Tags:
-    - id: 1
+    - id: 3
   socketGroup_obsolete: -1
   doorPrefabs_obsolete: []
   blockerPrefabs_obsolete: []

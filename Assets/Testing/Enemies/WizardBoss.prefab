@@ -1771,6 +1771,7 @@ GameObject:
   - component: {fileID: 2649970670533484457}
   - component: {fileID: 6021834470114355570}
   - component: {fileID: 5980697387281889880}
+  - component: {fileID: 4723802225143802318}
   m_Layer: 0
   m_Name: BossWizard@Wheelbarrow Idle
   m_TagString: Untagged
@@ -1945,8 +1946,8 @@ MonoBehaviour:
         DebugActive: 0
         Sfx: {fileID: 0}
         RandomSfx:
-        - {fileID: 8300000, guid: 56cd4593545c6bc41aab42b66713fe5d, type: 3}
-        - {fileID: 8300000, guid: 72a91b193d5f8f9458618f8e89c260cc, type: 3}
+        - {fileID: 8300000, guid: a4b6dea711227cc48aafcec2074ce6dd, type: 3}
+        - {fileID: 8300000, guid: 5e9c3b046d7a2564cac0aa23746c8e96, type: 3}
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -2056,8 +2057,8 @@ MonoBehaviour:
         DebugActive: 0
         Sfx: {fileID: 0}
         RandomSfx:
-        - {fileID: 8300000, guid: 26913ca25ad3196468f4306978f49051, type: 3}
-        - {fileID: 8300000, guid: 8d569c48ad98f6d4682eaf71dd76225a, type: 3}
+        - {fileID: 8300000, guid: 582ab25e00aea74418c8680c035a2c1a, type: 3}
+        - {fileID: 8300000, guid: 8f4fbee0b7bdbe148bef912a1b8d3224, type: 3}
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -2165,10 +2166,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 6021834470114355570}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: 82a93f2da21602e4cb671c6afd53f129, type: 3}
-        - {fileID: 8300000, guid: 28c2cbab54d5d3944a7b30c92bb5d6c7, type: 3}
+        Sfx: {fileID: 8300000, guid: e7c248312f35f464ea4a031ff2b25836, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -2276,10 +2275,8 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 6021834470114355570}
         DebugActive: 0
-        Sfx: {fileID: 0}
-        RandomSfx:
-        - {fileID: 8300000, guid: c90edb2dd242bb646957be3baf02f3c5, type: 3}
-        - {fileID: 8300000, guid: 8adeb7db977d7ce4488f4c870130132a, type: 3}
+        Sfx: {fileID: 8300000, guid: 62bf250a8d361244782e80618e65701f, type: 3}
+        RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
@@ -2387,7 +2384,7 @@ MonoBehaviour:
         RandomDurationMultiplier: {x: 0.5, y: 2}
         Owner: {fileID: 6021834470114355570}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 76288c371f3f9034c84a9aacf3918543, type: 3}
+        Sfx: {fileID: 8300000, guid: 19c8aa3379302d44aa3fee359e94951b, type: 3}
         RandomSfx: []
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
@@ -2479,3 +2476,25 @@ MonoBehaviour:
   rb: {fileID: 2649970670533484457}
   rbColl: {fileID: 6694386654416660548}
   player: {fileID: 9127456267550840678}
+--- !u!195 &4723802225143802318
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127456267550840678}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 4
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

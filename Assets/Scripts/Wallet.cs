@@ -16,6 +16,8 @@ public class Wallet : MonoBehaviour
     public Currency curr;
     [SerializeField]
     Transform nearCheckerPos;
+    [SerializeField]
+    TMPro.TextMeshProUGUI moneyShower;
     private bool wantsToBuy;
 
     public void OnDeath()
@@ -24,9 +26,9 @@ public class Wallet : MonoBehaviour
     }
 
     public void Start()
-    {   
-        if(nearCheckerPos!=null)
-        StartCoroutine(CheckNear());
+    {
+        if (nearCheckerPos != null)
+            StartCoroutine(CheckNear());
     }
 
     public void Update()
@@ -35,6 +37,7 @@ public class Wallet : MonoBehaviour
         {
             wantsToBuy = true;
         }
+        ShowMoney();
     }
 
     public void FixedUpdate()
@@ -76,7 +79,12 @@ public class Wallet : MonoBehaviour
     public bool TryToBuy(MerchantBox itemBox)
     {
         Merchant aux = itemBox.seller;
-        return aux.CheckEnough(ref quantity,itemBox.index);
+        return aux.CheckEnough(ref quantity, itemBox.index);
+    }
+
+    public void ShowMoney()
+    {
+        // moneyShower.text = quantity.ToString();
     }
 
 }
