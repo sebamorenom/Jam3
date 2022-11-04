@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuPause.unity
     guid: be7221add54e946488c71a8801e5a2f5
+  - enabled: 1
+    path: Assets/Scenes/DialogueTesting.unity
+    guid: 2362fb14986925247ab0abc6f0f75ceb
   m_configObjects: {}
