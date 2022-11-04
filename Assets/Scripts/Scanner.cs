@@ -79,6 +79,14 @@ public class Scanner : MonoBehaviour
                         wantPickUp = false;
                     }
                     //lastSeenItem = boxSelected.objInside.GetComponent<Item>();
+                    statsPanel.SetActive(true);
+                    statsPanel.transform.position = boxSelected.transform.position + panelOffset;
+                    statsPanel.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
+                    nameUI.text = boxSelected.objName;
+                    priceUI.text = boxSelected.price.ToString();
+                    valueUI.enabled = false;
+                    descriptionUI.enabled = false;
+
                 }
 
                 else if (hit.collider.gameObject.TryGetComponent<Item>(out lastSeenItem))
@@ -112,7 +120,7 @@ public class Scanner : MonoBehaviour
                                     damageTypeUI.text = analyzedItem.damageType + " damage";
                                     break;
                             }
-                            //CompareValue(analyzedItem);
+                            CompareValue(analyzedItem);
                             break;
 
                         case ItemType.Equipment:
@@ -160,13 +168,13 @@ public class Scanner : MonoBehaviour
 
     }
 
-    public bool GetLastSeenItem(out GameObject aux, out WeaponType weapType,out bool flip)
+    public bool GetLastSeenItem(out GameObject aux, out WeaponType weapType, out bool flip)
     {
         flip = false;
         if (toPickUp != null)
         {
             flip = toPickUp.weapType == WeaponType.Shield ? true : false;
-            weapType=toPickUp.weapType;
+            weapType = toPickUp.weapType;
             aux = toPickUp.gameObject;
             toPickUp = null;
             return true;

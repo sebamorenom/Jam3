@@ -8,27 +8,38 @@ public class SpawnableEnemyPool : ScriptableObject
     [SerializeField]
     public GameObject[] enemies;
     [SerializeField]
-    public float[] spawningCosts;
+    public float[] spawningProbabilities;
+
+    private int roomCount = 0;
     // Start is called before the first frame update
 
 
     public void GetEnemies(ref GameObject[] spawningPoints)
     {
-        float maxPerSpawn = spawningCosts[spawningCosts.Length - 1] - spawningPoints.Length;
+        float maxPerSpawn = spawningProbabilities[spawningProbabilities.Length - 1] - spawningPoints.Length;
         for (int i = 0; i < spawningPoints.Length; i++)
         {
-            spawningPoints[i] = GetRandomEnemyForCost(maxPerSpawn);
+            spawningPoints[i] = Instantiate(GetRandomEnemyForProbability(maxPerSpawn));
         }
     }
-    public GameObject GetRandomEnemyForCost(float cost)
+    public GameObject GetRandomEnemyForProbability(float cost)
     {
-        int i = spawningCosts.Length - 1;
-        while (spawningCosts[i] > cost)
+        float sumProb = 0 + roomCount / 100;
+        float randNumb = Random.value;
+        for (int i = 0; i < enemies.Length; i++)
         {
-            i--;
+            if (spawningProbabilities[i] + sumProb >= randNumb)
+            {
+                return enemies[i];
+            }
+            sumProb += spawningProbabilities[i];
         }
-        return enemies[Random.Range(0, i + 1)];
+        return null;
     }
 
-    //TO DO
+    public void SetCurrentRoom(int _roomCount)
+    {
+        roomCount = _roomCount;
+    }
+
 }

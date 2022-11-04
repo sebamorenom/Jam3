@@ -2123,7 +2123,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3017ed183b7342140857daf16cdfb8d2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5
+      value: 4.18
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3017ed183b7342140857daf16cdfb8d2,
         type: 3}
@@ -4072,14 +4072,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023578842}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.23, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1.23, y: 0.58, z: -0.825}
   m_LocalScale: {x: 0.27522, y: 0.27522, z: 0.27522}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1342100751}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &1023578844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4095,6 +4095,7 @@ MonoBehaviour:
   seller: {fileID: 1342100747}
   objInside: {fileID: 0}
   index: 0
+  objName: 
   price: 20
 --- !u!54 &1023578845
 Rigidbody:
@@ -4110,7 +4111,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &1023578846
 BoxCollider:
@@ -6667,8 +6668,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 0.25
-        MaxVolume: 0.5
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -6778,7 +6779,7 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 0.3
+        MinVolume: 0.1
         MaxVolume: 0.5
         MinPitch: 1
         MaxPitch: 1
@@ -7000,8 +7001,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -7109,8 +7110,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -8891,8 +8892,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 0.25
-        MaxVolume: 0.5
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -9002,8 +9003,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 0.3
-        MaxVolume: 0.5
+        MinVolume: 0.01
+        MaxVolume: 0.03
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -9113,7 +9114,7 @@ MonoBehaviour:
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
         MinVolume: 0.1
-        MaxVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -9223,8 +9224,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}
@@ -9332,8 +9333,8 @@ MonoBehaviour:
         SequentialOrder: 0
         SequentialOrderHoldLast: 0
         SequentialOrderHoldCooldownDuration: 2
-        MinVolume: 1
-        MaxVolume: 1
+        MinVolume: 0.1
+        MaxVolume: 0.3
         MinPitch: 1
         MaxPitch: 1
         PlaybackTime: {x: 0, y: 0}

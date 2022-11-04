@@ -7,6 +7,7 @@ public class MerchantBox : MonoBehaviour
     public Merchant seller;
     public GameObject objInside;
     public int index;
+    public string objName;
     public float price;
     private Collider[] objColliders;
 
@@ -16,10 +17,12 @@ public class MerchantBox : MonoBehaviour
         obj.transform.position = transform.position;
         obj.transform.rotation = transform.rotation;
         obj.GetComponent<Rigidbody>().isKinematic = false;
-        objInside.GetComponent<Rigidbody>().useGravity = false;
+        obj.GetComponent<Rigidbody>().useGravity = false;
+        obj.SetActive(true);
         objInside = obj;
         seller = mer;
         Item auxItem = obj.GetComponent<Item>();
+        objName = auxItem.itemName;
         price = auxItem.price;
         index = pos;
         objColliders = obj.GetComponents<Collider>();
