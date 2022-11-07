@@ -75,6 +75,7 @@ public class Enemy : Entity
         StartCoroutine(noise);
         StartCoroutine(LookForPlayer());
         StartCoroutine(attackRange);
+        health = maxHealth;
     }
 
     // Update is called once per frame

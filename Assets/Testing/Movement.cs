@@ -75,6 +75,7 @@ public class Movement : Entity
         StartCoroutine(CheckLastSeenObject());
         anim = GetComponent<Animator>();
         rb.GetComponent<Rigidbody>();
+        health = maxHealth;
     }
 
     // Update is called once per frame

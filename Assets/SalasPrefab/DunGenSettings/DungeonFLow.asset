@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e228b45736a8cf4ea000616e628a4dd, type: 3}
-  m_Name: DungeonFLow
+  m_Name: DungeonFlow
   m_EditorClassIdentifier: 
   globalPropGroupID_obsolete: 
   globalPropRanges_obsolete: []
   Length:
-    Min: 1
-    Max: 5
+    Min: 10
+    Max: 20
   BranchMode: 1
   BranchCount:
     Min: 1
@@ -26,18 +26,43 @@ MonoBehaviour:
   DoorwayConnectionChance: 1
   RestrictConnectionToSameSection: 0
   TileInjectionRules: []
-  TileTagConnectionMode: 1
+  TileTagConnectionMode: 0
   TileConnectionTags:
   - TagA:
+      id: 2
+    TagB:
+      id: 5
+  - TagA:
       id: 4
+    TagB:
+      id: 5
+  - TagA:
+      id: 4
+    TagB:
+      id: 3
+  - TagA:
+      id: 4
+    TagB:
+      id: 4
+  - TagA:
+      id: 5
+    TagB:
+      id: 3
+  - TagA:
+      id: 5
     TagB:
       id: 1
   - TagA:
-      id: 4
+      id: 5
     TagB:
-      id: 2
+      id: 0
+  - TagA:
+      id: 5
+    TagB:
+      id: 4
   BranchTagPruneMode: 0
   BranchPruneTags:
+  - id: 4
   - id: 5
   Nodes:
   - Graph: {fileID: 11400000}
