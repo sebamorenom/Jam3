@@ -17,10 +17,10 @@ MonoBehaviour:
   Length:
     Min: 10
     Max: 20
-  BranchMode: 1
+  BranchMode: 0
   BranchCount:
-    Min: 1
-    Max: 5
+    Min: 3
+    Max: 3
   GlobalProps: []
   KeyManager: {fileID: 0}
   DoorwayConnectionChance: 1
@@ -60,6 +60,10 @@ MonoBehaviour:
       id: 5
     TagB:
       id: 4
+  - TagA:
+      id: 5
+    TagB:
+      id: 6
   BranchTagPruneMode: 0
   BranchPruneTags:
   - id: 4

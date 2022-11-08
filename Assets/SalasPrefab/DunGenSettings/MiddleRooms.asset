@@ -22,7 +22,7 @@ MonoBehaviour:
     Min: 2
     Max: 5
   BranchCount:
-    Min: 0
-    Max: 2
+    Min: 3
+    Max: 3
   StraightenChance: 0
   Unique: 0

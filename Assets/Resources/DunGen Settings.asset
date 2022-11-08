@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultSocket: {fileID: 3385776913924477861}
   tagManager:
-    keys: 000000000100000002000000030000000400000005000000
+    keys: 00000000010000000200000003000000040000000500000006000000
     values:
     - Boss
     - MiniBoss
@@ -22,6 +22,7 @@ MonoBehaviour:
     - Special
     - Middle
     - Corridor
+    - EndBranch
 --- !u!114 &3385776913924477861
 MonoBehaviour:
   m_ObjectHideFlags: 0
