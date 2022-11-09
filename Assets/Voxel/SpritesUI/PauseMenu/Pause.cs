@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using PixelCrushers;
 
 public class Pause : MonoBehaviour
 {
@@ -50,6 +51,7 @@ public class Pause : MonoBehaviour
     public void ResumeGame()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         isPaused = false;
@@ -57,7 +59,8 @@ public class Pause : MonoBehaviour
     }
     public void GoToMainMenu()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
