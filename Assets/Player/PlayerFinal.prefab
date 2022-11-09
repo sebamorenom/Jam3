@@ -2481,8 +2481,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8896719205200766497}
   - component: {fileID: 8896719205200766499}
-  - component: {fileID: 8896719205200766496}
   - component: {fileID: 8896719205200766498}
+  - component: {fileID: 8896719205200766496}
   - component: {fileID: 8896719205200766556}
   - component: {fileID: 8896719205200766557}
   - component: {fileID: 8896719205200766559}
@@ -2529,20 +2529,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!136 &8896719205200766496
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8896719205200766502}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 4
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.8046944, z: 0}
 --- !u!114 &8896719205200766498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2574,12 +2560,26 @@ MonoBehaviour:
   handAnimators:
   - {fileID: 8626107610906932110}
   - {fileID: 8626107611087757146}
-  lifeBar: {fileID: 8896719203504945221}
+  healthBar: {fileID: 0}
   rb: {fileID: 8896719205200766499}
   wantsThrowLeft: 0
   wantsThrowRight: 0
   wantsPrimaryAction: 0
   wantsJump: 0
+--- !u!136 &8896719205200766496
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896719205200766502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: -2, z: 0}
 --- !u!136 &8896719205200766556
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2593,7 +2593,7 @@ CapsuleCollider:
   m_Radius: 1.25
   m_Height: 5
   m_Direction: 1
-  m_Center: {x: 0, y: -0.8046944, z: 0}
+  m_Center: {x: 0, y: -2, z: 0}
 --- !u!114 &8896719205200766557
 MonoBehaviour:
   m_ObjectHideFlags: 0
