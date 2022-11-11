@@ -33,7 +33,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Throwable
   - Entity
   - HitBoxColliders
   - HitColliders
