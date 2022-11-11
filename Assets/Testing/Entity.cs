@@ -55,6 +55,7 @@ public class Entity : MonoBehaviour
         float endTime = Time.fixedTime + buffDuration;
         for (int i = 0; i < statsToBuff.Length; i++)
         {
+
             this.GetType().GetField(statsToBuff[i]).SetValue(this, (float)this.GetType().GetField(statsToBuff[i]).GetValue(this) + buffModifiers[i]);
         }
         if (protection > 100)
@@ -65,10 +66,21 @@ public class Entity : MonoBehaviour
         {
             if (Time.fixedTime >= endTime)
             {
+                //Debug.Log("buffos quitados");   
                 for (int i = 0; i < statsToBuff.Length; i++)
                 {
-                    this.GetType().GetField(statsToBuff[i]).SetValue(this, (float)this.GetType().GetField(statsToBuff[i]).GetValue(this) - buffModifiers[i]);
+                    if (statsToBuff[i] == "health" && health - buffModifiers[i] <= 0)
+                    {
+
+                    }
+                    else
+                    {
+                        this.GetType().GetField(statsToBuff[i]).SetValue(this, (float)this.GetType().GetField(statsToBuff[i]).GetValue(this) - buffModifiers[i]);
+                    }
+
+
                 }
+
                 yield break;
             }
 

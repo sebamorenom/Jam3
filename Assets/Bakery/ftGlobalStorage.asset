@@ -400,7 +400,28 @@ MonoBehaviour:
   assetList:
   - Assets/Bakery/examples/content/sponza/bush.FBX
   - Assets/Bakery/examples/content/floor_lamp.FBX
-  uvOverlapAssetList: 00000000ffffffff
+  - Assets/FJ/Game/Weapons/DragonSword/DragonSword.obj
+  - Assets/FJ/Game/demon1/Demon1.obj
+  - Assets/FJ/Pociones/Pocion_1/Pocion_1_Mana/Pocion_1_Mana.obj
+  - Assets/FJ/Pociones/Pocion_4/Pocion_4_Mana/Pocion_4_Mana.obj
+  - Assets/FJ/Bola de Fuego/BolaFuego-4.obj
+  - Assets/FJ/Game/esqueleto/Esqueleto-1.obj
+  - Assets/FJ/Pociones/Pocion_2/Pocion_2_Vida/Pocion_2_Vida.obj
+  - Assets/FJ/Pociones/Pocion_2/Pocion_2_Mana/Pocion_2_Mana.obj
+  - Assets/FJ/Pociones/Pocion_3/Pocion_3_Mana/Pocion_3_Mana.obj
+  - Assets/FJ/Pociones/Pocion_5/Pocion_5_Vida/Pocion_5_Vida.obj
+  - Assets/FJ/Pociones/Pocion_4/Pocion_4_Vida/Pocion_4_Vida.obj
+  - Assets/FJ/Game/wizard/Wizard.obj
+  - Assets/FJ/Game/Weapons/Dagger/dagger.obj
+  - Assets/FJ/Pociones/Pocion_1/Pocion_1_Vida/Pocion_1_Vida.obj
+  - Assets/FJ/Game/goblin/Goblin.obj
+  - Assets/FJ/Game/Weapons/BigFire/BigFire.obj
+  - Assets/FJ/Pociones/Pocion_3/Pocion_3_Vida/Pocion_3_Vida.obj
+  - Assets/FJ/Pociones/Pocion_5/Pocion_5_Mana/Pocion_5_Mana.obj
+  - Assets/FJ/Game/golem/Golem.obj
+  - Assets/FJ/Game/Weapons/Axe/hacha.obj
+  - Assets/FJ/Game/diablo mamado/diabloboss.obj
+  uvOverlapAssetList: 00000000ffffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 0
   gpuName: 
