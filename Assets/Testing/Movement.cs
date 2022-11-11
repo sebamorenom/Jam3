@@ -28,6 +28,18 @@ public class Movement : Entity
     float movementSpeed;
     [SerializeField]
     float jumpForce;
+    [SerializeField]
+    AnimationCurve accelCurve;
+    [SerializeField]
+    AnimationCurve deccelCurve;
+    [NonSerialized]
+    float timeAccelBegins;
+    [NonSerialized]
+    float timeDeccelBegins;
+    [NonSerialized]
+    float timeSinceAccel;
+    [NonSerialized]
+    float timeSinceDeccel;
     [Header("Camera Parameters")]
     [SerializeField]
     Transform camTransform;
@@ -109,7 +121,7 @@ public class Movement : Entity
 
     public void MoveCharacter()
     {
-        Vector3 speed = movVect * movementSpeed;
+        Vector3 speed = movVect * movementSpeed * accelCurve.Evaluate(timeAccelBegins == 0f ? timeSinceAccel : timeSinceDeccel);
         rb.AddForce(speed, ForceMode.Force);
     }
 
@@ -344,6 +356,32 @@ public class Movement : Entity
     public void GetInputs()
     {
         inputVect = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        if (inputVect != Vector3.zero)
+        {
+            timeDeccelBegins = 0f;
+            if (timeAccelBegins != 0f)
+            {
+                timeSinceAccel = Time.fixedTime - timeAccelBegins;
+                Mathf.Clamp(timeSinceAccel, 0f, 1f);
+            }
+            else
+            {
+                timeAccelBegins = Time.fixedTime;
+            }
+        }
+        else
+        {
+            timeAccelBegins = 0f;
+            if (timeDeccelBegins != 0f)
+            {
+                timeSinceDeccel = Time.fixedTime - timeDeccelBegins;
+                Mathf.Clamp(timeSinceDeccel, 0f, 1f);
+            }
+            else
+            {
+                timeDeccelBegins = Time.fixedTime;
+            }
+        }
         movVect = inputVect.x * transform.right + inputVect.z * transform.forward;
         if (Input.GetKeyDown(KeyCode.Space))
             wantsJump = true;
