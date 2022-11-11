@@ -121,8 +121,12 @@ public class Movement : Entity
 
     public void MoveCharacter()
     {
-        Vector3 speed = movVect * movementSpeed * accelCurve.Evaluate(timeAccelBegins == 0f ? timeSinceAccel : timeSinceDeccel);
+        Vector3 speed = movVect * movementSpeed * accelCurve.Evaluate(timeAccelBegins != 0f ? timeSinceAccel : 0);
         rb.AddForce(speed, ForceMode.Force);
+        if (speed == Vector3.zero)
+        {
+            rb.velocity = new Vector3(rb.velocity.x * deccelCurve.Evaluate(timeSinceDeccel), rb.velocity.y, rb.velocity.z * deccelCurve.Evaluate(timeSinceDeccel));
+        }
     }
 
     public void Jump()
@@ -385,6 +389,7 @@ public class Movement : Entity
         movVect = inputVect.x * transform.right + inputVect.z * transform.forward;
         if (Input.GetKeyDown(KeyCode.Space))
             wantsJump = true;
+        Debug.Log(timeAccelBegins);
     }
 
     public void GetJumpImput()
