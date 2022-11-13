@@ -8,16 +8,23 @@ public class ProjectileAddOn : MonoBehaviour
     private Rigidbody rb;
     private bool targetHit;
     private Item item;
+    private GameObject player;
 
+    private void Awake()
+    {
+        player = GameObject.FindWithTag("Player");
+    }
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         item = GetComponent<Item>();
+        Physics.IgnoreCollision(this.gameObject.GetComponent<Collider>(), player.GetComponent<Collider>(), true);
     }
 
 
     private void OnCollisionEnter(Collision collision)
     {
+        
         //make sure only to stick to the first target you hit
         if (targetHit && collision.gameObject.layer == 28)
             return;
@@ -36,7 +43,7 @@ public class ProjectileAddOn : MonoBehaviour
 
         //make sure projectile moves with target
         
-        transform.SetParent(collision.transform);
+        transform.SetParent(collision.transform.GetChild(0));
         
 
         Destroy(gameObject, 5f);
