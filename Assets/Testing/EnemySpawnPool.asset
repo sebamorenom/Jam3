@@ -13,8 +13,20 @@ MonoBehaviour:
   m_Name: EnemySpawnPool
   m_EditorClassIdentifier: 
   enemies:
+  - {fileID: 7283187368034110595, guid: 981b559c2604c7245ad1f6e907cd7a30, type: 3}
+  - {fileID: 6894691117348228572, guid: 7dccc214e52c99343b4dc92c8e1ec019, type: 3}
+  - {fileID: 3413150608510264923, guid: 0eb32c7dc91de404e9d7579df6734c94, type: 3}
+  - {fileID: 3530260741939451162, guid: 082084b0e3884cd4fb45e79a1927513e, type: 3}
+  - {fileID: 599462370623143625, guid: 5550a27b1bbf28442ab3d04c28786e3e, type: 3}
   - {fileID: 845365825600661452, guid: 3d7b8c8f855776b42aa33d43f30b63f6, type: 3}
+  - {fileID: 668916218415993158, guid: fad2e7f13cdbb514fa00060442a3caef, type: 3}
   - {fileID: 915074300681250951, guid: 26c5e190b9c12494ab997219c3b2271d, type: 3}
   spawningProbabilities:
+  - 5
+  - 5
+  - 5
+  - 10
+  - 10
+  - 15
   - 25
-  - 75
+  - 25

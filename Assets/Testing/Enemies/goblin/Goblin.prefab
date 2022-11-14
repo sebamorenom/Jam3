@@ -267,14 +267,14 @@ NavMeshAgent:
   m_Acceleration: 16
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 3
+  m_StoppingDistance: 2
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.045
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 1
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &32535561927815830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,6 +2072,8 @@ MonoBehaviour:
   price: 0
   description: 
   hitColliders: []
+  player: {fileID: 0}
+  leftRight: 0
 --- !u!1 &7507391766323387799
 GameObject:
   m_ObjectHideFlags: 0

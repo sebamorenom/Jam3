@@ -341,6 +341,7 @@ public class Movement : Entity
             }
             handAnimators[0].SetInteger("RHandWeaponType", (int)WeaponType.Fist);
             handAnimators[1].SetInteger("RHandWeaponType", (int)WeaponType.Fist);
+            wantsThrowRight = false;
         }
         else
         {
@@ -354,6 +355,7 @@ public class Movement : Entity
             }
             handAnimators[0].SetInteger("LHandWeaponType", (int)WeaponType.Fist);
             handAnimators[1].SetInteger("LHandWeaponType", (int)WeaponType.Fist);
+            wantsThrowLeft = false;
         }
     }
 
@@ -389,7 +391,6 @@ public class Movement : Entity
         movVect = inputVect.x * transform.right + inputVect.z * transform.forward;
         if (Input.GetKeyDown(KeyCode.Space))
             wantsJump = true;
-        Debug.Log(timeAccelBegins);
     }
 
     public void GetJumpImput()
@@ -413,13 +414,21 @@ public class Movement : Entity
 
     public void GetThrowingInputs()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            wantsThrowLeft = true;
-        }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            wantsThrowRight = true;
+            if (handAnimators[0].GetInteger("RHandWeaponType") > 1 && handAnimators[0].GetInteger("RHandWeaponType") < 6)
+            {
+                handAnimators[0].Play("rHandThrow");
+                //wantsThrowRight = true;
+            }
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            if (handAnimators[1].GetInteger("LHandWeaponType") > 1 && handAnimators[1].GetInteger("LHandWeaponType") < 7)
+            {
+                handAnimators[1].Play("lHandThrow");
+                //wantsThrowLeft = true;
+            }
         }
     }
 

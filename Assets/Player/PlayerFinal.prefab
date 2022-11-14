@@ -1973,6 +1973,8 @@ MonoBehaviour:
   price: 0
   description: 
   hitColliders: []
+  player: {fileID: 8896719205200766498}
+  leftRight: 1
 --- !u!1 &8626107611087757147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,6 +2087,8 @@ MonoBehaviour:
   price: 0
   description: 
   hitColliders: []
+  player: {fileID: 8896719205200766498}
+  leftRight: 0
 --- !u!1 &8896719203394596981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,6 +2407,8 @@ MonoBehaviour:
   price: 0
   description: 
   hitColliders: []
+  player: {fileID: 0}
+  leftRight: 0
 --- !u!1 &8896719204277574646
 GameObject:
   m_ObjectHideFlags: 0
@@ -2666,6 +2672,18 @@ MonoBehaviour:
   protection: 5
   movementSpeed: 12
   jumpForce: 6
+  accelCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  deccelCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   camTransform: {fileID: 8896719203947900604}
   mouseSensitivity: 2
   lHand: {fileID: 8626107611087757140}

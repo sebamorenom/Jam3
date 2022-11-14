@@ -20,6 +20,7 @@ public class Spawner : MonoBehaviour
 
     public void Spawn()
     {
-        Enemy auxEnemy = Instantiate(pool.GetRandomEnemyForProbability(),transform).GetComponent<Enemy>();
+        Enemy auxEnemy = Instantiate(pool.GetRandomEnemyForProbability(), transform).GetComponent<Enemy>();
+        auxEnemy.transform.parent = transform.parent;
     }
 }

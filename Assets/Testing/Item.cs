@@ -39,6 +39,10 @@ public class Item : MonoBehaviour
     public string description;
     [SerializeField]
     public Collider[] hitColliders;
+    [SerializeField]
+    public Movement player;
+    [SerializeField]
+    bool leftRight;
 
     private bool isHitting;
     bool isEquipped = false;
@@ -111,10 +115,6 @@ public class Item : MonoBehaviour
                 }
                 break;
             case ItemType.Weapon:
-                if (weapType==WeaponType.Fist)
-                {
-                    Debug.Log("ManoColision");
-                }
                 if (collision.gameObject.layer == LayerMask.NameToLayer("Entity"))
                 {
                     entityHurt = collision.collider.GetComponent<Entity>();
@@ -175,4 +175,13 @@ public class Item : MonoBehaviour
             coll.enabled = !coll.enabled;
         }
     }
+
+    public void SendThrowInput()
+    {
+        if (player)
+        {
+            player.Throw(leftRight);
+        }
+    }
+
 }

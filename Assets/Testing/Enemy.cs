@@ -36,9 +36,10 @@ public class Enemy : Entity
     {
         for (; ; )
         {
-            Collider[] aux = Physics.OverlapSphere(transform.position, 6, LayerMask.NameToLayer("Entity"));
+            Collider[] aux = Physics.OverlapSphere(transform.position, 20, 1 << LayerMask.NameToLayer("Entity"));
             foreach (Collider coll in aux)
             {
+                Debug.Log("Searching");
                 if (coll.tag.Contains("Player") && player == null)
                 {
                     player = coll.gameObject;
@@ -67,6 +68,8 @@ public class Enemy : Entity
         rbRagdolls = GetComponentsInChildren<Rigidbody>();
         rbColliders = GetComponentsInChildren<Collider>();
         nav = GetComponentInParent<NavMeshAgent>();
+        nav.enabled = false;
+        Invoke("EnableNavMeshAgent", 1f);
         ToggleRagdoll(false);
         audioPlayer = GetComponent<MMF_Player>();
         transform.GetChild(0).TryGetComponent<PositionConstraint>(out posConstraint);
@@ -187,5 +190,10 @@ public class Enemy : Entity
         {
             other.GetComponent<Movement>().TakeDamage(strength);
         }
+    }
+
+    private void EnableNavMeshAgent()
+    {
+        nav.enabled = true;
     }
 }
