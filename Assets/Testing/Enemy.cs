@@ -43,6 +43,7 @@ public class Enemy : Entity
                 if (coll.tag.Contains("Player") && player == null)
                 {
                     player = coll.gameObject;
+                    audioPlayer.enabled = true;
                     yield break;
                 }
             }
@@ -72,6 +73,7 @@ public class Enemy : Entity
         Invoke("EnableNavMeshAgent", 1f);
         ToggleRagdoll(false);
         audioPlayer = GetComponent<MMF_Player>();
+        audioPlayer.enabled = false;
         transform.GetChild(0).TryGetComponent<PositionConstraint>(out posConstraint);
         noise = RandomNoise();
         attackRange = CheckAttackRange();

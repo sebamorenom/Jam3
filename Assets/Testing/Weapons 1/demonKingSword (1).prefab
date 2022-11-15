@@ -182,8 +182,10 @@ MonoBehaviour:
   statsToBuff: []
   statsModifiers: []
   splashRadius: 0
-  value: 1000
+  value: 10
   price: 100
   description: 
   hitColliders:
   - {fileID: 4414402554250620051}
+  player: {fileID: 0}
+  leftRight: 0

@@ -62,7 +62,8 @@ public class Movement : Entity
     Animator[] handAnimators;
     [SerializeField]
     Image healthBar;
-
+    [SerializeField]
+    GroundChecker grChecker;
 
     private HandSituation hSituation = HandSituation.Free;
     private Animator anim;
@@ -389,7 +390,7 @@ public class Movement : Entity
             }
         }
         movVect = inputVect.x * transform.right + inputVect.z * transform.forward;
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && grChecker.IsOnGround())
             wantsJump = true;
     }
 
