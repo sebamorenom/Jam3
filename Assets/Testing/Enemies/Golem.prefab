@@ -924,7 +924,7 @@ MonoBehaviour:
         Spread: 0
         RolloffMode: 0
         MinDistance: 1
-        MaxDistance: 500
+        MaxDistance: 20
         DrawGizmos: 0
         GizmosCenter: {fileID: 0}
         MinDistanceColor: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 1}
@@ -1285,6 +1285,8 @@ MonoBehaviour:
   rb: {fileID: 7995355907083271633}
   rbColl: {fileID: 6971355807715754224}
   attackTrigger: {fileID: 4813295874689905775}
+  isBoss: 0
+  numBossAttacks: 0
   player: {fileID: 0}
 --- !u!1 &4115312796183229558 stripped
 GameObject:

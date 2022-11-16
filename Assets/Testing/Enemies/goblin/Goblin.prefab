@@ -252,6 +252,8 @@ MonoBehaviour:
   rb: {fileID: 32535561927815836}
   rbColl: {fileID: 32535561927815837}
   attackTrigger: {fileID: 4539419450980919165}
+  isBoss: 0
+  numBossAttacks: 0
   player: {fileID: 0}
 --- !u!195 &32535561927815833
 NavMeshAgent:
@@ -549,7 +551,7 @@ MonoBehaviour:
         Spread: 0
         RolloffMode: 0
         MinDistance: 1
-        MaxDistance: 500
+        MaxDistance: 20
         DrawGizmos: 0
         GizmosCenter: {fileID: 0}
         MinDistanceColor: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 1}

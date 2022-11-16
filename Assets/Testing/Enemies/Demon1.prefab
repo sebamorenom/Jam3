@@ -717,6 +717,8 @@ MonoBehaviour:
   rb: {fileID: 3463257145002162005}
   rbColl: {fileID: 3463257145002162004}
   attackTrigger: {fileID: 950864624702312193}
+  isBoss: 0
+  numBossAttacks: 0
   player: {fileID: 0}
 --- !u!114 &7718419142534122735
 MonoBehaviour:
@@ -989,7 +991,7 @@ MonoBehaviour:
         Spread: 0
         RolloffMode: 0
         MinDistance: 1
-        MaxDistance: 500
+        MaxDistance: 20
         DrawGizmos: 0
         GizmosCenter: {fileID: 0}
         MinDistanceColor: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 1}
