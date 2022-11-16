@@ -21,6 +21,10 @@ public class Enemy : Entity
     Collider[] rbColliders;
     [SerializeField]
     Collider attackTrigger;
+    [SerializeField]
+    bool isBoss;
+    [SerializeField]
+    int numBossAttacks;
 
     private IEnumerator noise;
     private IEnumerator attackRange;
@@ -57,7 +61,12 @@ public class Enemy : Entity
         {
             if (player != null && Vector3.Distance(transform.position, player.transform.position) < 5f)
             {
-                anim.Play("Attack");
+                if (isBoss)
+                {
+                    anim.Play("Attack" + Random.Range(0, numBossAttacks));
+                }
+                else
+                    anim.Play("Attack");
             }
             yield return new WaitForSeconds(Random.Range(1f, 3f));
         }
