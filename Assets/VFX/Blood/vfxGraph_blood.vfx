@@ -20,7 +20,7 @@ MonoBehaviour:
     x: 464
     y: -190
     width: 1666
-    height: 2000
+    height: 1980
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1557,7 +1557,7 @@ MonoBehaviour:
       inputSlot: {fileID: 8926484042661614609}
     - outputSlot: {fileID: 8926484042661614607}
       inputSlot: {fileID: 8926484042661614616}
-    position: {x: 543.2, y: -88}
+    position: {x: 522, y: 52}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661614607
@@ -1611,7 +1611,7 @@ MonoBehaviour:
   m_UIIgnoredErrors: []
   m_Parent: {fileID: 114350483966674976}
   m_Children: []
-  m_UIPosition: {x: 717, y: -102}
+  m_UIPosition: {x: 724, y: -143}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots:
