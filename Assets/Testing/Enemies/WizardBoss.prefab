@@ -2045,7 +2045,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -2156,7 +2156,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -2265,7 +2265,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -2374,7 +2374,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -2483,7 +2483,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0

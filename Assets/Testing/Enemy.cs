@@ -82,7 +82,7 @@ public class Enemy : Entity
         Invoke("EnableNavMeshAgent", 1f);
         ToggleRagdoll(false);
         audioPlayer = GetComponent<MMF_Player>();
-        audioPlayer.enabled = false;
+        //audioPlayer.enabled = false;
         transform.GetChild(0).TryGetComponent<PositionConstraint>(out posConstraint);
         noise = RandomNoise();
         attackRange = CheckAttackRange();

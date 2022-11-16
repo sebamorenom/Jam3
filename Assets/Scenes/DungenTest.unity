@@ -1923,6 +1923,11 @@ PrefabInstance:
       propertyPath: m_Cameras.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8896719203947900546, guid: 557827f6500bda04ba5a57092d907e16,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8896719203947900547, guid: 557827f6500bda04ba5a57092d907e16,
         type: 3}
       propertyPath: m_ClearFlags
@@ -2141,7 +2146,7 @@ PrefabInstance:
     - target: {fileID: 8896719205200766498, guid: 557827f6500bda04ba5a57092d907e16,
         type: 3}
       propertyPath: accelCurve.m_Curve.Array.data[0].inSlope
-      value: -0.09374689
+      value: 0.063584685
       objectReference: {fileID: 0}
     - target: {fileID: 8896719205200766498, guid: 557827f6500bda04ba5a57092d907e16,
         type: 3}
@@ -2156,7 +2161,7 @@ PrefabInstance:
     - target: {fileID: 8896719205200766498, guid: 557827f6500bda04ba5a57092d907e16,
         type: 3}
       propertyPath: accelCurve.m_Curve.Array.data[0].outSlope
-      value: -0.09374689
+      value: 0.063584685
       objectReference: {fileID: 0}
     - target: {fileID: 8896719205200766498, guid: 557827f6500bda04ba5a57092d907e16,
         type: 3}
@@ -2201,7 +2206,7 @@ PrefabInstance:
     - target: {fileID: 8896719205200766498, guid: 557827f6500bda04ba5a57092d907e16,
         type: 3}
       propertyPath: accelCurve.m_Curve.Array.data[0].outWeight
-      value: 0.21168467
+      value: 0.24271686
       objectReference: {fileID: 0}
     - target: {fileID: 8896719205200766498, guid: 557827f6500bda04ba5a57092d907e16,
         type: 3}

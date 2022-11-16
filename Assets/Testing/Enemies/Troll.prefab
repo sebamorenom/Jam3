@@ -926,7 +926,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -936,7 +936,7 @@ MonoBehaviour:
         Spread: 0
         RolloffMode: 0
         MinDistance: 1
-        MaxDistance: 500
+        MaxDistance: 20
         DrawGizmos: 0
         GizmosCenter: {fileID: 0}
         MinDistanceColor: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 1}
@@ -1037,7 +1037,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -1048,8 +1048,8 @@ MonoBehaviour:
         RolloffMode: 0
         MinDistance: 1
         MaxDistance: 20
-        DrawGizmos: 0
-        GizmosCenter: {fileID: 0}
+        DrawGizmos: 1
+        GizmosCenter: {fileID: 8186450399701606958}
         MinDistanceColor: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 1}
         MaxDistanceColor: {r: 1, g: 0.27058825, b: 0, a: 1}
         TestPlayButton:
@@ -1146,7 +1146,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -1156,7 +1156,7 @@ MonoBehaviour:
         Spread: 0
         RolloffMode: 0
         MinDistance: 1
-        MaxDistance: 500
+        MaxDistance: 20
         DrawGizmos: 0
         GizmosCenter: {fileID: 0}
         MinDistanceColor: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 1}
@@ -1255,7 +1255,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -1265,7 +1265,7 @@ MonoBehaviour:
         Spread: 0
         RolloffMode: 0
         MinDistance: 1
-        MaxDistance: 500
+        MaxDistance: 20
         DrawGizmos: 0
         GizmosCenter: {fileID: 0}
         MinDistanceColor: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 1}
@@ -1366,7 +1366,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -1376,7 +1376,7 @@ MonoBehaviour:
         Spread: 0
         RolloffMode: 0
         MinDistance: 1
-        MaxDistance: 500
+        MaxDistance: 20
         DrawGizmos: 0
         GizmosCenter: {fileID: 0}
         MinDistanceColor: {r: 0.37254903, g: 0.61960787, b: 0.627451, a: 1}
