@@ -159,19 +159,7 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &206318664 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3009651671153692238, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &206318666 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5656754490109968555, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &225060502
+--- !u!114 &149048062
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,6 +200,59 @@ MonoBehaviour:
   fixPos3D: 0
   voxelSize: {x: 1, y: 1, z: 1}
   passedFilter: 0
+--- !u!114 &149100201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: LucesLittleRoom_LMA2
+  m_EditorClassIdentifier: 
+  resolution: 1024
+  bitmask: 1
+  id: 2
+  sortingID: 2
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  sssScale: 1
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
+  fixPos3D: 0
+  voxelSize: {x: 1, y: 1, z: 1}
+  passedFilter: 0
+--- !u!1 &206318664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3009651671153692238, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &206318666 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5656754490109968555, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &227999968 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651671740547362, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -224,6 +265,47 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &413418261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: LucesLittleRoom_LMA10
+  m_EditorClassIdentifier: 
+  resolution: 512
+  bitmask: 1
+  id: 7
+  sortingID: 7
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  sssScale: 1
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
+  fixPos3D: 0
+  voxelSize: {x: 1, y: 1, z: 1}
+  passedFilter: 0
 --- !u!1 &460183365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651670835411943, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -270,12 +352,13 @@ GameObject:
   m_Component:
   - component: {fileID: 615085953}
   - component: {fileID: 615085952}
+  - component: {fileID: 615085954}
   m_Layer: 0
   m_Name: AsisLuz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!114 &615085952
 MonoBehaviour:
@@ -302,54 +385,45 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615085951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -127.10607, y: -2.4825954, z: -3.3439255}
+  m_LocalPosition: {x: -47.75, y: 5.16, z: -24.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &643846968
+--- !u!114 &615085954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 615085951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: LucesLittleRoom_LMA12
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
   m_EditorClassIdentifier: 
-  resolution: 128
+  UID: -1885031541
+  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+  intensity: 5098.2
+  shadowSpread: 32.7
+  cutoff: 577
+  realisticFalloff: 0
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
   bitmask: 1
-  id: 4
-  sortingID: 4
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  sssScale: 1
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
-  fixPos3D: 0
-  voxelSize: {x: 1, y: 1, z: 1}
-  passedFilter: 0
+  bakeToIndirect: 0
+  shadowmask: 1
+  indirectIntensity: 1
+  falloffMinRadius: 1
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &718619805 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651670396750543, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -362,48 +436,67 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &751864025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!1 &759252556 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3009651671339339756, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: LucesLittleRoom_LMA14
-  m_EditorClassIdentifier: 
-  resolution: 64
-  bitmask: 1
-  id: 6
-  sortingID: 6
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  sssScale: 1
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
-  fixPos3D: 0
-  voxelSize: {x: 1, y: 1, z: 1}
-  passedFilter: 0
---- !u!114 &754960548
+--- !u!23 &759252558 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5656754490024952073, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &812936480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3009651671216433870, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &812936482 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5656754489912927275, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &826278717 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3009651670108102524, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &826278719 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5656754489062543769, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &863852171 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3009651671084973307, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &863852173 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5656754490048590366, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &889396190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3009651671272203661, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &889396192 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5656754489957821288, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 2111072444}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &925862690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -444,43 +537,25 @@ MonoBehaviour:
   fixPos3D: 0
   voxelSize: {x: 1, y: 1, z: 1}
   passedFilter: 0
---- !u!1 &759252556 stripped
+--- !u!1 &949708252 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3009651671339339756, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+  m_CorrespondingSourceObject: {fileID: 3009651671900659154, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &759252558 stripped
+--- !u!23 &949708254 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5656754490024952073, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+  m_CorrespondingSourceObject: {fileID: 5656754489782407991, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &812936480 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3009651671216433870, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &812936482 stripped
+--- !u!23 &950932269 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5656754489912927275, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
+  m_CorrespondingSourceObject: {fileID: 2880901687377803103, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &826278717 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3009651670108102524, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &826278719 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5656754489062543769, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &862691490
+--- !u!114 &952648969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -490,12 +565,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: LucesLittleRoom_LMA2
+  m_Name: LucesLittleRoom_LMA13
   m_EditorClassIdentifier: 
-  resolution: 1024
+  resolution: 128
   bitmask: 1
-  id: 2
-  sortingID: 2
+  id: 5
+  sortingID: 5
   isImplicit: 1
   area: 0
   totalVertexCount: 0
@@ -521,48 +596,6 @@ MonoBehaviour:
   fixPos3D: 0
   voxelSize: {x: 1, y: 1, z: 1}
   passedFilter: 0
---- !u!1 &863852171 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3009651671084973307, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &863852173 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5656754490048590366, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &889396190 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3009651671272203661, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &889396192 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5656754489957821288, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &949708252 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3009651671900659154, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &949708254 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 5656754489782407991, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &950932269 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 2880901687377803103, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
-    type: 3}
-  m_PrefabInstance: {fileID: 2111072444}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &966452732 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651670493281929, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -765,10 +798,10 @@ MonoBehaviour:
   renderSettingsRTPVSceneView: 0
   renderSettingsRTPVWidth: 640
   renderSettingsRTPVHeight: 360
-  lastBakeTime: 74
+  lastBakeTime: 78
   enlightenWarningShown: 0
   enlightenWarningShown2: 0
-  lightUIDs: 5a991cd9
+  lightUIDs: 5a991cd98bb3a48f
   lights:
   - tform:
       e00: 1
@@ -789,7 +822,37 @@ MonoBehaviour:
       e33: 1
     color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
     intensity: 5098.2
-    range: 10
+    range: 577
+    radius: 32.7
+    samples: 8
+    samples2: 0
+    bitmask: 0
+    bakeToIndirect: 0
+    selfShadow: 0
+    realisticFalloff: 0
+    projMode: 0
+    cookie: {fileID: 0}
+    angle: 30
+  - tform:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: -127.10607
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: -2.4825954
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: -3.3439255
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+    intensity: 5098.2
+    range: 577
     radius: 32.7
     samples: 8
     samples2: 0
@@ -801,42 +864,42 @@ MonoBehaviour:
     cookie: {fileID: 0}
     angle: 30
   implicitGroups:
-  - {fileID: 751864025}
-  - {fileID: 754960548}
-  - {fileID: 1676339497}
-  - {fileID: 754960548}
-  - {fileID: 1676339497}
-  - {fileID: 1676339497}
-  - {fileID: 225060502}
-  - {fileID: 1501244040}
-  - {fileID: 754960548}
-  - {fileID: 2099662727}
-  - {fileID: 754960548}
-  - {fileID: 862691490}
-  - {fileID: 1676339497}
-  - {fileID: 754960548}
-  - {fileID: 1712736867}
-  - {fileID: 1676339497}
-  - {fileID: 754960548}
-  - {fileID: 754960548}
-  - {fileID: 754960548}
-  - {fileID: 643846968}
-  - {fileID: 754960548}
-  - {fileID: 1676339497}
-  - {fileID: 862691490}
-  - {fileID: 754960548}
-  - {fileID: 225060502}
-  - {fileID: 1676339497}
-  - {fileID: 225060502}
-  - {fileID: 754960548}
-  - {fileID: 754960548}
-  - {fileID: 1676339497}
-  - {fileID: 754960548}
-  - {fileID: 2099662727}
-  - {fileID: 225060502}
-  - {fileID: 2099662727}
-  - {fileID: 754960548}
-  - {fileID: 862691490}
+  - {fileID: 1295343811}
+  - {fileID: 925862690}
+  - {fileID: 413418261}
+  - {fileID: 925862690}
+  - {fileID: 413418261}
+  - {fileID: 413418261}
+  - {fileID: 149048062}
+  - {fileID: 952648969}
+  - {fileID: 925862690}
+  - {fileID: 1608388428}
+  - {fileID: 925862690}
+  - {fileID: 149100201}
+  - {fileID: 413418261}
+  - {fileID: 925862690}
+  - {fileID: 2139742828}
+  - {fileID: 413418261}
+  - {fileID: 925862690}
+  - {fileID: 925862690}
+  - {fileID: 925862690}
+  - {fileID: 1240846494}
+  - {fileID: 925862690}
+  - {fileID: 413418261}
+  - {fileID: 149100201}
+  - {fileID: 925862690}
+  - {fileID: 149048062}
+  - {fileID: 413418261}
+  - {fileID: 149048062}
+  - {fileID: 925862690}
+  - {fileID: 925862690}
+  - {fileID: 413418261}
+  - {fileID: 925862690}
+  - {fileID: 1608388428}
+  - {fileID: 149048062}
+  - {fileID: 1608388428}
+  - {fileID: 925862690}
+  - {fileID: 149100201}
   implicitGroupedObjects:
   - {fileID: 72308199}
   - {fileID: 82062864}
@@ -1076,15 +1139,15 @@ MonoBehaviour:
     - {fileID: 2800000, guid: 7b2944f0ef13d114c9af28ee5c5d247c, type: 3}
     - {fileID: 2800000, guid: fc6a44bdadb11414bbaea655becd10fe, type: 3}
     masks:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 2800000, guid: c53583ca24a39c340965701e58003bfa, type: 3}
+    - {fileID: 2800000, guid: 6765fe21c1e3a7c4fb72158de3bc9d20, type: 3}
+    - {fileID: 2800000, guid: 9b26b6fa4ed505143a3adfaa8ef188e4, type: 3}
+    - {fileID: 2800000, guid: 1672f59489ab4c14aad08886341b8583, type: 3}
+    - {fileID: 2800000, guid: ff7453b0b971dda4c867673390983fef, type: 3}
+    - {fileID: 2800000, guid: 29b005eb69a0f284eaa571f3243e8e87, type: 3}
+    - {fileID: 2800000, guid: e9f2675171021154e88cd61e85d946f9, type: 3}
+    - {fileID: 2800000, guid: a1f597f7a7003b94993f39d0adb61f94, type: 3}
+    - {fileID: 2800000, guid: 84abe958f7f18f3438b8e93c4405f67b, type: 3}
     dirMaps: []
     rnmMaps0: []
     rnmMaps1: []
@@ -1233,6 +1296,88 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1240846494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: LucesLittleRoom_LMA12
+  m_EditorClassIdentifier: 
+  resolution: 128
+  bitmask: 1
+  id: 4
+  sortingID: 4
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  sssScale: 1
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
+  fixPos3D: 0
+  voxelSize: {x: 1, y: 1, z: 1}
+  passedFilter: 0
+--- !u!114 &1295343811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: LucesLittleRoom_LMA14
+  m_EditorClassIdentifier: 
+  resolution: 64
+  bitmask: 1
+  id: 6
+  sortingID: 6
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  sssScale: 1
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
+  fixPos3D: 0
+  voxelSize: {x: 1, y: 1, z: 1}
+  passedFilter: 0
 --- !u!1 &1337518692 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651671011054986, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -1317,47 +1462,6 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1501244040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: LucesLittleRoom_LMA13
-  m_EditorClassIdentifier: 
-  resolution: 128
-  bitmask: 1
-  id: 5
-  sortingID: 5
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  sssScale: 1
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
-  fixPos3D: 0
-  voxelSize: {x: 1, y: 1, z: 1}
-  passedFilter: 0
 --- !u!1 &1526253698 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651670761088890, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -1394,6 +1498,47 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1608388428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: LucesLittleRoom_LMA1
+  m_EditorClassIdentifier: 
+  resolution: 1024
+  bitmask: 1
+  id: 1
+  sortingID: 1
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  sssScale: 1
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
+  fixPos3D: 0
+  voxelSize: {x: 1, y: 1, z: 1}
+  passedFilter: 0
 --- !u!1 &1637694849 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651670630127276, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -1406,47 +1551,6 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1676339497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: LucesLittleRoom_LMA10
-  m_EditorClassIdentifier: 
-  resolution: 512
-  bitmask: 1
-  id: 7
-  sortingID: 7
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  sssScale: 1
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
-  fixPos3D: 0
-  voxelSize: {x: 1, y: 1, z: 1}
-  passedFilter: 0
 --- !u!1 &1691592444 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651670983133117, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -1459,47 +1563,6 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1712736867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: LucesLittleRoom_LMA11
-  m_EditorClassIdentifier: 
-  resolution: 128
-  bitmask: 1
-  id: 3
-  sortingID: 3
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  sssScale: 1
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
-  fixPos3D: 0
-  voxelSize: {x: 1, y: 1, z: 1}
-  passedFilter: 0
 --- !u!1 &1754517998 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3009651671033815933, guid: 503cd6bf13a66db4aaf03821ca65f6a8,
@@ -1601,8 +1664,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913468979}
-  m_LocalRotation: {x: -0.09436258, y: 0.70057166, z: -0.09430908, w: -0.701}
-  m_LocalPosition: {x: -41.020256, y: 7.7161655, z: -11.344254}
+  m_LocalRotation: {x: 0.080283456, y: -0.6874063, z: 0.0767697, w: 0.7177281}
+  m_LocalPosition: {x: -38.513245, y: 6.3869343, z: -11.122385}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1632,7 +1695,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -1692,47 +1755,6 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2099662727
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
-  m_Name: LucesLittleRoom_LMA1
-  m_EditorClassIdentifier: 
-  resolution: 1024
-  bitmask: 1
-  id: 1
-  sortingID: 1
-  isImplicit: 1
-  area: 0
-  totalVertexCount: 0
-  vertexCounter: 0
-  sceneLodLevel: -1
-  sceneName: 
-  containsTerrains: 0
-  probes: 0
-  mode: 1
-  renderMode: 1000
-  renderDirMode: 1000
-  atlasPacker: 1000
-  computeSSS: 0
-  sssSamples: 16
-  sssDensity: 10
-  sssColor: {r: 1, g: 1, b: 1, a: 1}
-  sssScale: 1
-  fakeShadowBias: 0
-  transparentSelfShadow: 0
-  flipNormal: 0
-  parentName: 
-  overridePath: 
-  fixPos3D: 0
-  voxelSize: {x: 1, y: 1, z: 1}
-  passedFilter: 0
 --- !u!1001 &2111072444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2231,3 +2253,44 @@ MeshRenderer:
     type: 3}
   m_PrefabInstance: {fileID: 2111072444}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2139742828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0b4dd729a12d046982652f834580a2, type: 3}
+  m_Name: LucesLittleRoom_LMA11
+  m_EditorClassIdentifier: 
+  resolution: 128
+  bitmask: 1
+  id: 3
+  sortingID: 3
+  isImplicit: 1
+  area: 0
+  totalVertexCount: 0
+  vertexCounter: 0
+  sceneLodLevel: -1
+  sceneName: 
+  containsTerrains: 0
+  probes: 0
+  mode: 1
+  renderMode: 1000
+  renderDirMode: 1000
+  atlasPacker: 1000
+  computeSSS: 0
+  sssSamples: 16
+  sssDensity: 10
+  sssColor: {r: 1, g: 1, b: 1, a: 1}
+  sssScale: 1
+  fakeShadowBias: 0
+  transparentSelfShadow: 0
+  flipNormal: 0
+  parentName: 
+  overridePath: 
+  fixPos3D: 0
+  voxelSize: {x: 1, y: 1, z: 1}
+  passedFilter: 0
