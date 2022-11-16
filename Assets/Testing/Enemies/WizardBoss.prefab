@@ -790,6 +790,51 @@ CharacterJoint:
   m_EnablePreprocessing: 0
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1 &4288735485483162757
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5742492913442392667}
+  - component: {fileID: 1569853059903221579}
+  m_Layer: 0
+  m_Name: attackCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5742492913442392667
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288735485483162757}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.0055, y: 0.0102, z: 0.0156}
+  m_LocalScale: {x: 0.005, y: 0.005, z: 0.005}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8494050242373062108}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1569853059903221579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288735485483162757}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 10, y: 10, z: 5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4302618582018190120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,6 +1838,7 @@ Transform:
   m_Children:
   - {fileID: 4157033002124832072}
   - {fileID: 551737376503751954}
+  - {fileID: 5742492913442392667}
   m_Father: {fileID: 1809134596573765277}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2470,15 +2516,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c48a9ea983ace64d835c71e67fd4f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 20
   health: 200
   strength: 15
   protection: 15
   rb: {fileID: 2649970670533484457}
   rbColl: {fileID: 6694386654416660548}
   attackTrigger: {fileID: 0}
-  isBoss: 0
-  numBossAttacks: 0
+  isBoss: 1
+  numBossAttacks: 2
   player: {fileID: 9127456267550840678}
 --- !u!195 &4723802225143802318
 NavMeshAgent:
@@ -2489,7 +2535,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 9127456267550840678}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.025
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -2498,7 +2544,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 2
+  m_Height: 0.11
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
