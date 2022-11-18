@@ -1771,6 +1771,22 @@ MonoBehaviour:
   isBoss: 0
   numBossAttacks: 0
   player: {fileID: 0}
+--- !u!114 &8145090002929189398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8300887602194803529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81bb0c935afe8842a091175b5da979f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantity: 20
+  curr: {fileID: 11400000, guid: 5be6957eacee63b499c2de289d6327d0, type: 2}
+  nearCheckerPos: {fileID: 0}
+  moneyShower: {fileID: 0}
 --- !u!4 &8681108191246004723 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 59d087dde861d574fa88317d2df00b5a,

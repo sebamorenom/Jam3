@@ -401,7 +401,33 @@ MonoBehaviour:
   - Assets/Bakery/examples/content/sponza/bush.FBX
   - Assets/Bakery/examples/content/floor_lamp.FBX
   - Assets/SalasPrefab/wizard.fbx
-  uvOverlapAssetList: 00000000ffffffff00000000
+  - Assets/Testing/Weapons/ToFilter/DownShield.obj
+  - Assets/Testing/Weapons/ToFilter/GreySword.obj
+  - Assets/Testing/Weapons/ToFilter/BullShieldBrown.obj
+  - Assets/Testing/Weapons/ToFilter/hacha.obj
+  - Assets/Testing/Weapons/ToFilter/RohanSword.obj
+  - Assets/Testing/Weapons/ToFilter/martillo.obj
+  - Assets/Testing/Weapons/ToFilter/BigFire.obj
+  - Assets/Testing/Weapons/ToFilter/RedSword.obj
+  - Assets/Testing/Weapons/ToFilter/maza.obj
+  - Assets/Testing/Weapons/ToFilter/Narsil.obj
+  - Assets/Testing/Weapons/ToFilter/dagger.obj
+  - Assets/Testing/Weapons/ToFilter/VikShield.obj
+  - Assets/Testing/Weapons/ToFilter/smallaxe.obj
+  - Assets/Testing/Weapons/ToFilter/DragonDagger.obj
+  - Assets/Testing/Weapons/ToFilter/espada rey demonio.obj
+  - Assets/Testing/Weapons/ToFilter/Anduril.obj
+  - Assets/Testing/Weapons/ToFilter/Lanza.obj
+  - Assets/Testing/Weapons/ToFilter/RedDagger.obj
+  - Assets/Testing/Weapons/ToFilter/GreyAxe.obj
+  - Assets/Testing/Weapons/ToFilter/DragonSword.obj
+  - Assets/Weapons/Finished/DragonSword.obj
+  - Assets/Weapons/Finished/GreySword.obj
+  - Assets/Testing/Weapons/ToFilter/Spear.obj
+  - Assets/Testing/Weapons/ToFilter/Axe.obj
+  - Assets/Testing/Weapons/ToFilter/Hammer.obj
+  - Assets/Testing/Weapons/ToFilter/SmallAxe.obj
+  uvOverlapAssetList: 00000000ffffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   xatlasWarningShown: 0
   foundCompatibleSetup: 0
   gpuName: 

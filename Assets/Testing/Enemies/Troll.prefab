@@ -698,6 +698,7 @@ GameObject:
   - component: {fileID: 7361615735739136954}
   - component: {fileID: 3508597370749958103}
   - component: {fileID: 5156076208221745914}
+  - component: {fileID: 577757624850702725}
   m_Layer: 27
   m_Name: TROLL@Mutant Idle
   m_TagString: Untagged
@@ -1431,6 +1432,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &577757624850702725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3929284176551843840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81bb0c935afe8842a091175b5da979f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantity: 15
+  curr: {fileID: 11400000, guid: 5be6957eacee63b499c2de289d6327d0, type: 2}
+  nearCheckerPos: {fileID: 0}
+  moneyShower: {fileID: 0}
 --- !u!1 &4060510226753513239
 GameObject:
   m_ObjectHideFlags: 0

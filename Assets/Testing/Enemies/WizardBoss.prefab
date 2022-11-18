@@ -1817,6 +1817,7 @@ GameObject:
   - component: {fileID: 6021834470114355570}
   - component: {fileID: 5980697387281889880}
   - component: {fileID: 4723802225143802318}
+  - component: {fileID: 1560668353759596431}
   m_Layer: 0
   m_Name: BossWizard@Wheelbarrow Idle
   m_TagString: Untagged
@@ -2548,3 +2549,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &1560668353759596431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9127456267550840678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81bb0c935afe8842a091175b5da979f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantity: 1000
+  curr: {fileID: 11400000, guid: 5be6957eacee63b499c2de289d6327d0, type: 2}
+  nearCheckerPos: {fileID: 0}
+  moneyShower: {fileID: 0}

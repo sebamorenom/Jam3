@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 538811742590752070}
   - component: {fileID: 538811742590752089}
   - component: {fileID: 6201645550893475599}
+  - component: {fileID: -1510492118392803349}
   m_Layer: 27
   m_Name: Skeleton
   m_TagString: Enemy
@@ -977,6 +978,22 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
+--- !u!114 &-1510492118392803349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845365825600661452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81bb0c935afe8842a091175b5da979f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantity: 10
+  curr: {fileID: 11400000, guid: 5be6957eacee63b499c2de289d6327d0, type: 2}
+  nearCheckerPos: {fileID: 0}
+  moneyShower: {fileID: 0}
 --- !u!1 &1352013933173765670
 GameObject:
   m_ObjectHideFlags: 0

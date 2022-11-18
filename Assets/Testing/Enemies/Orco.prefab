@@ -254,6 +254,7 @@ GameObject:
   - component: {fileID: 1966720877163322083}
   - component: {fileID: 8664627765668423323}
   - component: {fileID: 660351200871241077}
+  - component: {fileID: 4824602836749890535}
   m_Layer: 27
   m_Name: ORCO@Idle
   m_TagString: Untagged
@@ -985,6 +986,22 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &4824602836749890535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1795145415531425905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81bb0c935afe8842a091175b5da979f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantity: 15
+  curr: {fileID: 11400000, guid: 5be6957eacee63b499c2de289d6327d0, type: 2}
+  nearCheckerPos: {fileID: 0}
+  moneyShower: {fileID: 0}
 --- !u!1 &1958444011744793386
 GameObject:
   m_ObjectHideFlags: 0

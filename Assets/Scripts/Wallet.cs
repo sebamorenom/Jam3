@@ -37,7 +37,8 @@ public class Wallet : MonoBehaviour
         {
             wantsToBuy = true;
         }
-        ShowMoney();
+        if (nearCheckerPos != null)
+            ShowMoney();
     }
 
     public void FixedUpdate()
@@ -84,7 +85,7 @@ public class Wallet : MonoBehaviour
 
     public void ShowMoney()
     {
-        // moneyShower.text = quantity.ToString();
+        moneyShower.text = quantity.ToString() + " DDollars";
     }
 
 }

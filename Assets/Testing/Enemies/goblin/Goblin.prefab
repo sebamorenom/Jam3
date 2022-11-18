@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 32535561927815839}
   - component: {fileID: 32535561927815833}
   - component: {fileID: 32535561927815830}
+  - component: {fileID: 537699791156407555}
   m_Layer: 27
   m_Name: Goblin
   m_TagString: Enemy
@@ -893,6 +894,22 @@ MonoBehaviour:
           ButtonText: Debug Stop Sound
         ResetSequentialIndexButton:
           ButtonText: Reset Sequential Index
+--- !u!114 &537699791156407555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915074300681250951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d81bb0c935afe8842a091175b5da979f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quantity: 5
+  curr: {fileID: 11400000, guid: 5be6957eacee63b499c2de289d6327d0, type: 2}
+  nearCheckerPos: {fileID: 0}
+  moneyShower: {fileID: 0}
 --- !u!1 &1114243396594043868
 GameObject:
   m_ObjectHideFlags: 0
