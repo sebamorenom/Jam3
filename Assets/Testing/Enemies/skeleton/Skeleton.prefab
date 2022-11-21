@@ -326,16 +326,16 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845365825600661452}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.82
   m_Speed: 4
   m_Acceleration: 16
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_AngularSpeed: 45
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
+  m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 3.4
   m_BaseOffset: 0
@@ -737,7 +737,7 @@ MonoBehaviour:
         SoloAllTracks: 0
         AutoUnSoloOnEnd: 0
         PanStereo: 0
-        SpatialBlend: 0
+        SpatialBlend: 1
         BypassEffects: 0
         BypassListenerEffects: 0
         BypassReverbZones: 0
@@ -1069,7 +1069,7 @@ GameObject:
   - component: {fileID: 3819804530485805528}
   - component: {fileID: 7964968070395036631}
   m_Layer: 29
-  m_Name: GameObject
+  m_Name: attackCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

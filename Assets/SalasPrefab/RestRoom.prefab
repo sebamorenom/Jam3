@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3163776286234127109}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 80.76, y: 21.28, z: 38.93}
+  m_LocalPosition: {x: 80.76, y: 21.59, z: 38.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1861,6 +1861,7 @@ GameObject:
   - component: {fileID: 4773643121477007185}
   - component: {fileID: 4773643121477007187}
   - component: {fileID: 4773643121477007184}
+  - component: {fileID: 6464677117962168244}
   m_Layer: 0
   m_Name: Point Light (2)
   m_TagString: Untagged
@@ -1894,9 +1895,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.35686275, g: 0.49019608, b: 0.4509804, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Color: {r: 0.5568628, g: 0.62352943, b: 0.4901961, a: 1}
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -1934,7 +1935,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1965,6 +1966,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &6464677117962168244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4773643121477007198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: 96561828
+  color: {r: 0.5568628, g: 0.62352943, b: 0.4901961, a: 1}
+  intensity: 50
+  shadowSpread: 0.05
+  cutoff: 20
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &4773643121479005183
 GameObject:
   m_ObjectHideFlags: 0
@@ -2581,6 +2614,7 @@ GameObject:
   - component: {fileID: 4773643121541541038}
   - component: {fileID: 4773643121541541024}
   - component: {fileID: 4773643121541541025}
+  - component: {fileID: 5443472892662143973}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -2614,9 +2648,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2685,6 +2719,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &5443472892662143973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4773643121541541039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: 1799629293
+  color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  intensity: 50
+  shadowSpread: 0.05
+  cutoff: 20
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &4773643121549896277
 GameObject:
   m_ObjectHideFlags: 0
@@ -3700,6 +3766,7 @@ GameObject:
   - component: {fileID: 4773643121648455547}
   - component: {fileID: 4773643121648455549}
   - component: {fileID: 4773643121648455546}
+  - component: {fileID: 653193800976630937}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -3733,9 +3800,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3804,6 +3871,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &653193800976630937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4773643121648455544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: 2097652483
+  color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  intensity: 50
+  shadowSpread: 0.05
+  cutoff: 20
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &4773643121649378471
 GameObject:
   m_ObjectHideFlags: 0
@@ -11260,6 +11359,7 @@ GameObject:
   - component: {fileID: 4773643122299578068}
   - component: {fileID: 4773643122299578070}
   - component: {fileID: 4773643122299578071}
+  - component: {fileID: 8991446604379854758}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -11293,9 +11393,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -11364,6 +11464,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &8991446604379854758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4773643122299578069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: 1191520544
+  color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  intensity: 50
+  shadowSpread: 0.05
+  cutoff: 20
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &4773643122300804059
 GameObject:
   m_ObjectHideFlags: 0
@@ -16061,6 +16193,7 @@ GameObject:
   - component: {fileID: 4773643122762297859}
   - component: {fileID: 4773643122762297861}
   - component: {fileID: 4773643122762297858}
+  - component: {fileID: 8332991313490987910}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -16094,9 +16227,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -16165,6 +16298,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &8332991313490987910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4773643122762297856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: -504952964
+  color: {r: 0.7411765, g: 0.7411765, b: 0.7411765, a: 1}
+  intensity: 50
+  shadowSpread: 0.05
+  cutoff: 20
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &4773643122763053160
 GameObject:
   m_ObjectHideFlags: 0

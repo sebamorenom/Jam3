@@ -96,6 +96,7 @@ public class Scanner : MonoBehaviour
                     statsPanel.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
                     nameUI.text = boxSelected.objName;
                     priceUI.text = boxSelected.price.ToString();
+                    damageTypeUI.enabled = false;
                     valueUI.enabled = false;
                     descriptionUI.enabled = false;
 
@@ -132,7 +133,7 @@ public class Scanner : MonoBehaviour
                                     damageTypeUI.text = analyzedItem.damageType + " damage";
                                     break;
                             }
-                            //CompareValue(analyzedItem);
+                            CompareValue(analyzedItem);
                             break;
 
                         case ItemType.Equipment:
@@ -200,14 +201,15 @@ public class Scanner : MonoBehaviour
     }
 
 
-    public void SetItems()
+    public void SetItems(Item _leftHand, Item _rightHand)
     {
-        //GetComponent<Player>().GetHoldingItems(ref leftHandItem, ref rightHandItem);
+        leftHandItem = _leftHand;
+        rightHandItem = _rightHand;
     }
 
     public void CompareValue(Item pickableItem)
     {
-        if (leftHandItem.weapType == analyzedItem.weapType && leftHandItem.weapType == WeaponType.Shield)
+        if (leftHandItem != null && leftHandItem.weapType == analyzedItem.weapType && leftHandItem.weapType == WeaponType.Shield)
         {
             if (analyzedItem.value > leftHandItem.value)
             {
@@ -222,7 +224,7 @@ public class Scanner : MonoBehaviour
                 valueComparisonLeft.sprite = arrowWorst;
             }
         }
-        else if (leftHandItem.weapType != WeaponType.Shield && analyzedItem.weapType != WeaponType.Shield)
+        else if (leftHandItem != null && leftHandItem.weapType != WeaponType.Shield && analyzedItem.weapType != WeaponType.Shield)
         {
             if (analyzedItem.value > leftHandItem.value)
             {
@@ -243,7 +245,7 @@ public class Scanner : MonoBehaviour
 
         }
 
-        if (rightHandItem.weapType == analyzedItem.weapType && rightHandItem.weapType == WeaponType.Shield)
+        if (rightHandItem != null && rightHandItem.weapType == analyzedItem.weapType && rightHandItem.weapType == WeaponType.Shield)
         {
             if (analyzedItem.value > rightHandItem.value)
             {
@@ -258,7 +260,7 @@ public class Scanner : MonoBehaviour
                 valueComparisonRight.sprite = arrowWorst;
             }
         }
-        else if (rightHandItem.weapType != WeaponType.Shield && analyzedItem.weapType != WeaponType.Shield)
+        else if (rightHandItem != null && rightHandItem.weapType != WeaponType.Shield && analyzedItem.weapType != WeaponType.Shield)
         {
             if (analyzedItem.value > rightHandItem.value)
             {

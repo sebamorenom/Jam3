@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6829438710010322966}
   - component: {fileID: 5977906983497045841}
   - component: {fileID: 5573219849711612737}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3cfea6c64898b4a811e753e9ae4b6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Hammer
   type: 0
   weapType: 5
   damageType: 2
@@ -153,7 +153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6319422691249018296}
   - component: {fileID: 5689972924428776760}
-  m_Layer: 0
+  m_Layer: 29
   m_Name: hitColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}

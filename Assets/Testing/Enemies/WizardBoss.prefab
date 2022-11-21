@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8798738065262136395}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8244495304655720259}
   - component: {fileID: 8244495304655720261}
   - component: {fileID: 8244495304655720258}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 8244495304037248452}
   - component: {fileID: 8244495304037248455}
   - component: {fileID: 8244495304037248454}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 8244495303057452154}
   - component: {fileID: 8244495303057452156}
   - component: {fileID: 8244495303057452157}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -373,7 +373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5977056746010883078}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 8244495304452926009}
   - component: {fileID: 8244495304452926008}
   - component: {fileID: 8244495304452926011}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,8 +442,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.015
-  m_Center: {x: 0, y: 0.0025, z: 0}
+  m_Radius: 0.008
+  m_Center: {x: 0, y: 0.007, z: 0}
 --- !u!54 &8244495304452926008
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -515,7 +515,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5364845385293832015}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -546,7 +546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2147720982261505085}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ GameObject:
   - component: {fileID: 8244495303352097163}
   - component: {fileID: 8244495303352097162}
   - component: {fileID: 8244495303352097165}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -691,7 +691,7 @@ GameObject:
   - component: {fileID: 8244495304416311718}
   - component: {fileID: 8244495304416311705}
   - component: {fileID: 8244495304416311704}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -951,7 +951,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8610529185060272728}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -985,7 +985,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6490788169019686047}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1020,7 +1020,7 @@ GameObject:
   - component: {fileID: 8244495304610045743}
   - component: {fileID: 8244495304610045742}
   - component: {fileID: 8244495304610045729}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1128,7 +1128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2884029426557924901}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1160,9 +1160,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1809134596573765277}
-  m_Layer: 0
+  m_Layer: 27
   m_Name: WizardBoss
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1175,7 +1175,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5129890139292044831}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.052269, y: 0.5, z: -47.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1192,7 +1192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2906563505834983412}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6051744553725291203}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1255,7 +1255,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7773204187040519679}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1289,7 +1289,7 @@ GameObject:
   - component: {fileID: 8244495303320722234}
   - component: {fileID: 8244495303320722237}
   - component: {fileID: 8244495303320722236}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1400,7 +1400,7 @@ GameObject:
   - component: {fileID: 8244495305015723931}
   - component: {fileID: 8244495305015723933}
   - component: {fileID: 8244495305015723930}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1508,7 +1508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 780583301661957041}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:HeadTop_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1539,7 +1539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3163437841910323865}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1571,7 +1571,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4456389529568517851}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1606,7 +1606,7 @@ GameObject:
   - component: {fileID: 8244495304452926148}
   - component: {fileID: 8244495304452926151}
   - component: {fileID: 8244495304452926150}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1714,7 +1714,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1177401111189509034}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1748,7 +1748,7 @@ GameObject:
   - component: {fileID: 4157033002124832072}
   - component: {fileID: 8244495303054065610}
   - component: {fileID: 8244495303054065613}
-  m_Layer: 0
+  m_Layer: 28
   m_Name: mixamorig:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1784,8 +1784,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.03, y: 0.015, z: 0.025}
-  m_Center: {x: 0, y: -0.003, z: -0.001}
+  m_Size: {x: 0.03, y: 0.006, z: 0.025}
+  m_Center: {x: 0, y: 0, z: -0.001}
 --- !u!54 &8244495303054065613
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1800,7 +1800,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 80
   m_CollisionDetection: 0
 --- !u!1 &9127456267550840678
 GameObject:
@@ -1818,7 +1818,7 @@ GameObject:
   - component: {fileID: 5980697387281889880}
   - component: {fileID: 4723802225143802318}
   - component: {fileID: 1560668353759596431}
-  m_Layer: 0
+  m_Layer: 27
   m_Name: BossWizard@Wheelbarrow Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1854,7 +1854,7 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.03
-  m_Height: 0.11
+  m_Height: 0.109
   m_Direction: 1
   m_Center: {x: 0, y: 0.055, z: 0}
 --- !u!95 &6842274423106767840
@@ -2517,16 +2517,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c48a9ea983ace64d835c71e67fd4f8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 20
+  maxHealth: 200
   health: 200
   strength: 15
   protection: 15
   rb: {fileID: 2649970670533484457}
   rbColl: {fileID: 6694386654416660548}
-  attackTrigger: {fileID: 0}
+  attackTrigger: {fileID: 1569853059903221579}
   isBoss: 1
   numBossAttacks: 2
-  player: {fileID: 9127456267550840678}
+  player: {fileID: 0}
 --- !u!195 &4723802225143802318
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2534,19 +2534,19 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9127456267550840678}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.025
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 4
+  m_AngularSpeed: 45
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.11
-  m_BaseOffset: 0
+  m_Height: 0.109
+  m_BaseOffset: 0.001
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &1560668353759596431

@@ -21,6 +21,11 @@ public class GroundChecker : MonoBehaviour
         onGround = true;
     }
 
+    private void OnTriggerExit(Collider collision)
+    {
+        onGround = false;
+    }
+
     public bool IsOnGround()
     {
         return onGround;

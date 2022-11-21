@@ -3825,6 +3825,7 @@ GameObject:
   - component: {fileID: 8464742279676824065}
   - component: {fileID: 8060089444815814474}
   - component: {fileID: 802256005680393211}
+  - component: {fileID: 5731814143893101624}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -3859,8 +3860,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3898,7 +3899,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -3929,6 +3930,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &5731814143893101624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974958358572880556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: -1541101009
+  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+  intensity: 30
+  shadowSpread: 0.05
+  cutoff: 10
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &2037810585578351433
 GameObject:
   m_ObjectHideFlags: 0
@@ -4611,6 +4644,7 @@ GameObject:
   - component: {fileID: 7252367929231946774}
   - component: {fileID: 2648566409609827852}
   - component: {fileID: 4614991478046135765}
+  - component: {fileID: 7351075498398974422}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -4645,8 +4679,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -4684,7 +4718,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -4715,6 +4749,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &7351075498398974422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2500483827397750341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: -163604808
+  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+  intensity: 30
+  shadowSpread: 0.05
+  cutoff: 10
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &2513647896011544942
 GameObject:
   m_ObjectHideFlags: 0
@@ -5072,7 +5138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2645541277624446723}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 35.34, y: -10.66, z: -6.1}
+  m_LocalPosition: {x: 35.34, y: -10.21, z: -6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5093,7 +5159,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorPrefabPriority: 0
   ConnectorPrefabWeights: []
-  BlockerPrefabWeights: []
+  BlockerPrefabWeights:
+  - GameObject: {fileID: 7018402697652298631, guid: a6b3113bf1c9ed343ad840014584770f,
+      type: 3}
+    Weight: 1
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   ConnectorSceneObjects: []
@@ -7697,7 +7766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4135711251198467956}
   m_LocalRotation: {x: 0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.99, y: -10.66, z: -6.1}
+  m_LocalPosition: {x: -9.7, y: -10.21, z: -6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7718,7 +7787,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorPrefabPriority: 0
   ConnectorPrefabWeights: []
-  BlockerPrefabWeights: []
+  BlockerPrefabWeights:
+  - GameObject: {fileID: 7018402697652298631, guid: a6b3113bf1c9ed343ad840014584770f,
+      type: 3}
+    Weight: 1
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   ConnectorSceneObjects: []
@@ -8398,6 +8470,7 @@ GameObject:
   - component: {fileID: 7283302256008741281}
   - component: {fileID: 5407192795620462746}
   - component: {fileID: 7569864939684733773}
+  - component: {fileID: 2060594249763076473}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -8432,8 +8505,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -8471,7 +8544,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -8502,6 +8575,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &2060594249763076473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4428439691479501768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: -190786453
+  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+  intensity: 30
+  shadowSpread: 0.05
+  cutoff: 10
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &4461435366770571670
 GameObject:
   m_ObjectHideFlags: 0
@@ -9114,6 +9219,7 @@ GameObject:
   - component: {fileID: 6025828608278843247}
   - component: {fileID: 9008019845209498829}
   - component: {fileID: 2904569194207560336}
+  - component: {fileID: 3891222366947177528}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -9148,8 +9254,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -9187,7 +9293,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -9218,6 +9324,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &3891222366947177528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4631544896408651554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: -1001015129
+  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+  intensity: 30
+  shadowSpread: 0.05
+  cutoff: 10
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &4646290279068821054
 GameObject:
   m_ObjectHideFlags: 0
@@ -11028,6 +11166,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4610248622892645159}
+  - component: {fileID: 6901743603243227166}
+  - component: {fileID: 6698409638203615100}
+  - component: {fileID: -557472577550058416}
   m_Layer: 0
   m_Name: CorridorMiddleDoor
   m_TagString: Untagged
@@ -11042,8 +11183,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5767150593791636654}
-  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -114.89, y: 12.45, z: 4.14}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11062,6 +11203,111 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &6901743603243227166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5767150593791636654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 238d443cf4b172f4989d5ce455c57c3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowImmediateRepeats: 1
+  AllowRotation: 1
+  RepeatMode: 0
+  OverrideAutomaticTileBounds: 0
+  TileBoundsOverride:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+  Entrance: {fileID: 0}
+  Exit: {fileID: 0}
+  OverrideConnectionChance: 0
+  ConnectionChance: 0
+  Tags:
+    Tags:
+    - id: 5
+  AllDoorways: []
+  UsedDoorways: []
+  UnusedDoorways: []
+  placement:
+    pathDepth: 0
+    normalizedPathDepth: 0
+    branchDepth: 0
+    normalizedBranchDepth: 0
+    isOnMainPath: 0
+    localBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    worldBounds:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0, y: 0, z: 0}
+    graphNode:
+      Graph: {fileID: 0}
+      TileSets: []
+      NodeType: 0
+      Position: 0
+      Label: 
+      Keys: []
+      Locks: []
+      LockPlacement: 0
+    graphLine:
+      Graph: {fileID: 0}
+      DungeonArchetypes: []
+      Position: 0
+      Length: 0
+      Keys: []
+      Locks: []
+    archetype: {fileID: 0}
+    tileSet: {fileID: 0}
+    position: {x: 0, y: 0, z: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 1}
+  fileVersion: 1
+--- !u!114 &6698409638203615100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5767150593791636654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 0}
+  m_BuildHeightMesh: 0
+--- !u!114 &-557472577550058416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5767150593791636654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6060fd6258d274789b90112a743d51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  navSurface: {fileID: 0}
 --- !u!1 &5780061078262757216
 GameObject:
   m_ObjectHideFlags: 0
@@ -11980,6 +12226,7 @@ GameObject:
   - component: {fileID: 5201106858646052364}
   - component: {fileID: 4569010481812633415}
   - component: {fileID: 1094901180145134156}
+  - component: {fileID: 2043163803105147044}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -12014,8 +12261,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -12053,7 +12300,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -12084,6 +12331,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &2043163803105147044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301246077818305480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: -687196600
+  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+  intensity: 30
+  shadowSpread: 0.05
+  cutoff: 10
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &6354302544022113225
 GameObject:
   m_ObjectHideFlags: 0
@@ -14182,6 +14461,7 @@ GameObject:
   - component: {fileID: 8212653289719816671}
   - component: {fileID: 8830652242352924903}
   - component: {fileID: 2311296701360573268}
+  - component: {fileID: 6226175347969687889}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -14216,8 +14496,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -14255,7 +14535,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -14286,6 +14566,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &6226175347969687889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7340407808233694799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: 915622779
+  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+  intensity: 30
+  shadowSpread: 0.05
+  cutoff: 10
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &7343061068490022678
 GameObject:
   m_ObjectHideFlags: 0
@@ -15346,7 +15658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7848987638148598759}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 9.4, y: -10.66, z: -12.46}
+  m_LocalPosition: {x: 9.4, y: -10.21, z: -12.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15367,7 +15679,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DoorPrefabPriority: 0
   ConnectorPrefabWeights: []
-  BlockerPrefabWeights: []
+  BlockerPrefabWeights:
+  - GameObject: {fileID: 7018402697652298631, guid: a6b3113bf1c9ed343ad840014584770f,
+      type: 3}
+    Weight: 1
   AvoidRotatingDoorPrefab: 0
   AvoidRotatingBlockerPrefab: 0
   ConnectorSceneObjects: []
@@ -17024,6 +17339,7 @@ GameObject:
   - component: {fileID: 7129857177896843646}
   - component: {fileID: 2938869566266554115}
   - component: {fileID: 3042868292951552301}
+  - component: {fileID: 4849772156822319449}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -17058,8 +17374,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 30
-  m_Range: 10
+  m_Intensity: 50
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -17097,7 +17413,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -17128,6 +17444,38 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &4849772156822319449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8614141988684067735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UID: 1566523321
+  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
+  intensity: 30
+  shadowSpread: 0.05
+  cutoff: 10
+  realisticFalloff: 1
+  samples: 8
+  projMode: 0
+  cookie: {fileID: 0}
+  angle: 30
+  innerAngle: 0
+  cubemap: {fileID: 0}
+  iesFile: {fileID: 0}
+  bitmask: 1
+  bakeToIndirect: 0
+  shadowmask: 0
+  indirectIntensity: 1
+  falloffMinRadius: 0.01
+  shadowmaskGroupID: 0
+  directionMode: 0
 --- !u!1 &8630051718989199948
 GameObject:
   m_ObjectHideFlags: 0
@@ -17911,88 +18259,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 22.48, y: 12.8, z: 0.49}
   m_Center: {x: 29.9, y: 6.32, z: 0}
---- !u!1 &8738718945667174151
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 149231669233121120}
-  - component: {fileID: 8738718945667174146}
-  - component: {fileID: 8738718945667174145}
-  - component: {fileID: 8738718945667174144}
-  m_Layer: 0
-  m_Name: puerta_roja
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 119
-  m_IsActive: 1
---- !u!4 &149231669233121120
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8738718945667174151}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000008940697}
-  m_LocalPosition: {x: 0, y: 0, z: -1.0999994}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8738718945707695085}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!54 &8738718945667174146
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8738718945667174151}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 126
-  m_CollisionDetection: 0
---- !u!65 &8738718945667174145
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8738718945667174151}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.37, y: 8.46, z: 0.46}
-  m_Center: {x: 0, y: 4.21, z: -1.03}
---- !u!114 &8738718945667174144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8738718945667174151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a82b6b8adce70964dbdd88d916e1c5cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dungeon: {fileID: 0}
-  DoorwayA: {fileID: 0}
-  DoorwayB: {fileID: 0}
-  TileA: {fileID: 0}
-  TileB: {fileID: 0}
-  dontCullBehind: 0
-  isOpen: 1
 --- !u!1 &8738718945691921116
 GameObject:
   m_ObjectHideFlags: 0
@@ -18058,7 +18324,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5440379723141576992}
-  - {fileID: 149231669233121120}
   - {fileID: 8852114127039465486}
   m_Father: {fileID: 8738718945331284604}
   m_RootOrder: 1
@@ -18462,7 +18727,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8738718945707695085}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8852114127039465484
 MeshFilter:

@@ -13,7 +13,7 @@ public class Merchant : MonoBehaviour
     [SerializeField]
     MerchantBox[] boxes;
 
-    private void Awake()
+    private void Start()
     {
         FillBoxes();
     }

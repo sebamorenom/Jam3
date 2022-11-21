@@ -34,6 +34,7 @@ public class Enemy : Entity
     private MMF_Player audioPlayer;
     private NavMeshAgent nav;
     private PositionConstraint posConstraint;
+    private Wallet wallet;
 
 
     IEnumerator LookForPlayer()
@@ -43,7 +44,6 @@ public class Enemy : Entity
             Collider[] aux = Physics.OverlapSphere(transform.position, 20, 1 << LayerMask.NameToLayer("Entity"));
             foreach (Collider coll in aux)
             {
-                Debug.Log("Searching");
                 if (coll.tag.Contains("Player") && player == null)
                 {
                     player = coll.gameObject;
@@ -59,7 +59,7 @@ public class Enemy : Entity
     {
         for (; ; )
         {
-            if (player != null && Vector3.Distance(transform.position, player.transform.position) < 5f)
+            if (player != null && Vector3.Distance(transform.position, player.transform.position) < 5f + rbColl.bounds.size.z / 2)
             {
                 if (isBoss)
                 {
@@ -79,7 +79,7 @@ public class Enemy : Entity
         rbColliders = GetComponentsInChildren<Collider>();
         nav = GetComponentInParent<NavMeshAgent>();
         nav.enabled = false;
-        Invoke("EnableNavMeshAgent", 1f);
+        Invoke("EnableNavMeshAgent", 2f);
         ToggleRagdoll(false);
         audioPlayer = GetComponent<MMF_Player>();
         //audioPlayer.enabled = false;
@@ -90,12 +90,14 @@ public class Enemy : Entity
         StartCoroutine(LookForPlayer());
         StartCoroutine(attackRange);
         health = maxHealth;
+        wallet = GetComponentInParent<Wallet>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        HeadTo();
+        if (health > 0)
+            HeadTo();
         if (anim.enabled)
         {
             ToAnimator();
@@ -120,6 +122,7 @@ public class Enemy : Entity
     public void TakeDamage(float damage, Vector3 collisionPoint)
     {
         audioPlayer.GetFeedbackOfType<MMF_MMSoundManagerSound>("Hurt").Play(transform.position);
+        anim.Play("Hurt");
         health -= damage - damage * (protection / 100);
         if (health <= 0)
         {
@@ -133,9 +136,11 @@ public class Enemy : Entity
         if (posConstraint != null)
             posConstraint.enabled = false;
         audioPlayer.GetFeedbackOfType<MMF_MMSoundManagerSound>("Dying").Play(transform.position);
+        wallet.OnDeath();
         ToggleRagdoll(true);
         StopCoroutine(noise);
         StopCoroutine(attackRange);
+        gameObject.layer = LayerMask.NameToLayer("DeadEntity");
         nav.enabled = false;
         foreach (Rigidbody rb in rbRagdolls)
         {
@@ -148,9 +153,11 @@ public class Enemy : Entity
         if (posConstraint != null)
             posConstraint.enabled = false;
         audioPlayer.GetFeedbackOfType<MMF_MMSoundManagerSound>("Dying").Play(transform.position);
+        wallet.OnDeath();
         StopCoroutine(noise);
         StopCoroutine(attackRange);
         ToggleRagdoll(true);
+        attackTrigger.enabled = false;
         nav.enabled = false;
     }
 

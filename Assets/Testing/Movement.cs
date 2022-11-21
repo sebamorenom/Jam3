@@ -71,8 +71,8 @@ public class Movement : Entity
     public Rigidbody rb;
     private GameObject agaDerChild;
     private GameObject agaIzqChild;
-    private Item weaponRight;
-    private Item weaponLeft;
+    public Item weaponRight;
+    public Item weaponLeft;
     public bool wantsThrowLeft = false;
     public bool wantsThrowRight = false;
     public bool wantsPrimaryAction = false;
@@ -101,6 +101,7 @@ public class Movement : Entity
         GetPrimaryAttackInput();
         GetThrowingInputs();
         HealthBarUpdater();
+        scan.SetItems(weaponLeft, weaponRight);
     }
 
     private void FixedUpdate()
@@ -240,10 +241,12 @@ public class Movement : Entity
             agaIzqChild = child.gameObject;
             weaponLeft = child.GetComponentInChildren<Item>();
         }
-        child.GetComponent<Rigidbody>().isKinematic = true;
+        Rigidbody auxChild = child.GetComponent<Rigidbody>();
+        auxChild.isKinematic = true;
+        auxChild.velocity = Vector3.zero;
         child.position = parent.position;
         child.localRotation = Quaternion.identity;
-        child.GetComponentInChildren<MeshCollider>().enabled = false;
+        child.GetComponentInChildren<BoxCollider>().enabled = false;
     }
 
     public void CheckThrowInput()
@@ -314,10 +317,11 @@ public class Movement : Entity
         }
         aux.parent = null;
         Rigidbody rgb = aux.GetComponent<Rigidbody>();
-        MeshCollider meshColl = aux.GetComponentInChildren<MeshCollider>();
-        meshColl.enabled = true;
+        BoxCollider boxColl = aux.GetComponentInChildren<BoxCollider>();
+        boxColl.enabled = true;
+        rgb.velocity = Vector3.zero;
         rgb.isKinematic = false;
-        rgb.AddForce(Camera.main.transform.forward * 9, ForceMode.Impulse);
+        rgb.AddForce(Camera.main.transform.forward * 1, ForceMode.Impulse);
         rgb.AddForceAtPosition(Camera.main.transform.forward * 6f, aux.position + 3f * aux.up, ForceMode.Impulse);
         if (handAnimators[0].GetInteger("LHandWeaponType") == (int)WeaponType.TwoHanded && handAnimators[0].GetInteger("RHandWeaponType") == (int)WeaponType.TwoHanded)
         {

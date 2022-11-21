@@ -565,7 +565,7 @@ GameObject:
   - component: {fileID: 3413150608510264920}
   m_Layer: 27
   m_Name: Troll
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -665,8 +665,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.02, y: 0.011200553, z: 0.009526998}
-  m_Center: {x: 0, y: 0, z: 0.0041394834}
+  m_Size: {x: 0.01, y: 0.002, z: 0.009526998}
+  m_Center: {x: 0, y: -0.001, z: 0.0041394834}
 --- !u!54 &4199315223251769093
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1417,16 +1417,16 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3929284176551843840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.01
   m_Speed: 2
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_AngularSpeed: 45
+  m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 0
+  m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.036
   m_BaseOffset: 0
@@ -1494,9 +1494,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.0056
-  m_Height: 0.03
+  m_Height: 0.01
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.002, z: 0}
 --- !u!54 &4199315221961155872
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1716,9 +1716,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.0056
-  m_Height: 0.03
+  m_Height: 0.01
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.002, z: 0}
 --- !u!54 &4199315223601621118
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1859,8 +1859,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.01, y: 0.02, z: 0.009556633}
-  m_Center: {x: 0, y: 0, z: 0.002507473}
+  m_Size: {x: 0.01, y: 0.008, z: 0.009556633}
+  m_Center: {x: 0, y: 0.003, z: 0.002507473}
 --- !u!54 &4199315223943585329
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2140,8 +2140,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.012
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.008
+  m_Center: {x: 0, y: 0.005, z: 0}
 --- !u!54 &4199315221961155879
 Rigidbody:
   m_ObjectHideFlags: 0
