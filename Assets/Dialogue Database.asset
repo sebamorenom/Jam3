@@ -2935,8 +2935,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: If thou are thinking of entering,, there are some things you should
-          know
+        value: If thou are thinking of entering, hear my advice
         type: 0
         typeString: 
       - title: Sequence
@@ -3046,7 +3045,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: If thou want to pick up a weapon thou must press F
+        value: To pick up a weapon, thou must press F
         type: 0
         typeString: 
       - title: Sequence
@@ -3074,8 +3073,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 420.58817
-        y: 143.17146
+        x: 419.36865
+        y: 141.95195
         width: 160
         height: 30
     - id: 5
@@ -3104,7 +3103,7 @@ MonoBehaviour:
         value: 'And to throw whatever thou wield in thine hands, Q and E
 
           for
-          left and right.'
+          left and right hand respectively.'
         type: 0
         typeString: 
       - title: Sequence
@@ -3159,7 +3158,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: To attack enemies thou must press the left side of thine hamster,
+        value: To attack enemies, thou must press the left side of thine hamster,
           forgive me, thy mouse
         type: 0
         typeString: 

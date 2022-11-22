@@ -20,10 +20,6 @@ public class ChestUsable : MonoBehaviour
     {
         audioSrc = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
-        if (!isMimic)
-        {
-
-        }
     }
     public void Open()
     {

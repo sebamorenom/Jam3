@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 992875043
+  UID: 16687248
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 100
   shadowSpread: 0.05
@@ -3777,7 +3777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -1286013960
+  UID: 209841205
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 100
   shadowSpread: 0.05
@@ -4219,7 +4219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -726107963
+  UID: -926129198
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 100
   shadowSpread: 0.05
@@ -5785,7 +5785,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2767115002144170836}
   m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 35.098846, y: -10.49, z: -6}
+  m_LocalPosition: {x: 35.098846, y: -10.68, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7547,7 +7547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3524432479174093875}
   m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.610254, y: -10.49, z: -6}
+  m_LocalPosition: {x: -9.610254, y: -10.68, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9349,7 +9349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -136579830
+  UID: -606992819
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 100
   shadowSpread: 0.05
@@ -10417,7 +10417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -248050025
+  UID: 1629939949
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 100
   shadowSpread: 0.05
@@ -12686,7 +12686,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -836467072
+  UID: 1198699854
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 100
   shadowSpread: 0.05
@@ -16156,7 +16156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -1692407257
+  UID: 1849432249
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 100
   shadowSpread: 0.05
@@ -17384,7 +17384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 1380911549
+  UID: -341072051
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 100
   shadowSpread: 0.05
@@ -18224,10 +18224,10 @@ MonoBehaviour:
   allowImmediateRepeats: 1
   AllowRotation: 1
   RepeatMode: 0
-  OverrideAutomaticTileBounds: 0
+  OverrideAutomaticTileBounds: 1
   TileBoundsOverride:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+    m_Center: {x: 12.718143, y: -6.226123, z: -6.029872}
+    m_Extent: {x: 22.388725, y: 6.3499994, z: 6.2020693}
   Entrance: {fileID: 0}
   Exit: {fileID: 0}
   OverrideConnectionChance: 0

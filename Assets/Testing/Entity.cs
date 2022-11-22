@@ -28,13 +28,16 @@ public class Entity : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Debug.Log("Ouch");
         health -= damage - damage * (protection / 100);
         Debug.Log("Current Health: " + health);
         if (health <= 0)
         {
             Die();
         }
+    }
+    public void Heal(float heal)
+    {
+        health = health + heal > maxHealth ? maxHealth : health + heal;
     }
 
     public IEnumerator TakeDamageOverTime(float totalDamage, float duration, float tickRate)

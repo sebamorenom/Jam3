@@ -28,7 +28,7 @@ public class Merchant : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
-            curr.Exchange(transform.position + transform.forward, other.gameObject.GetComponent<Item>().price);
+            curr.Exchange(transform.position + transform.up * 2, other.gameObject.GetComponent<Item>().price);
             Destroy(other.gameObject);
         }
     }

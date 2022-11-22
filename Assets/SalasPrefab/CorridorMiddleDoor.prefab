@@ -3942,7 +3942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -1541101009
+  UID: 1079069527
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 30
   shadowSpread: 0.05
@@ -4761,7 +4761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -163604808
+  UID: 999413356
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 30
   shadowSpread: 0.05
@@ -5138,7 +5138,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2645541277624446723}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 35.34, y: -10.21, z: -6.1}
+  m_LocalPosition: {x: 35.34, y: -10.68, z: -6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7766,7 +7766,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4135711251198467956}
   m_LocalRotation: {x: 0, y: -0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -9.7, y: -10.21, z: -6.1}
+  m_LocalPosition: {x: -9.7, y: -10.68, z: -6.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8587,7 +8587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -190786453
+  UID: 1767585899
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 30
   shadowSpread: 0.05
@@ -9336,7 +9336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -1001015129
+  UID: -1281839532
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 30
   shadowSpread: 0.05
@@ -11218,10 +11218,10 @@ MonoBehaviour:
   allowImmediateRepeats: 1
   AllowRotation: 1
   RepeatMode: 0
-  OverrideAutomaticTileBounds: 0
+  OverrideAutomaticTileBounds: 1
   TileBoundsOverride:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0.5, z: 0.5}
+    m_Center: {x: 12.695835, y: -6.226123, z: -6.2384396}
+    m_Extent: {x: 22.53543, y: 6.3499994, z: 6.3185806}
   Entrance: {fileID: 0}
   Exit: {fileID: 0}
   OverrideConnectionChance: 0
@@ -12343,7 +12343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -687196600
+  UID: -1378294763
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 30
   shadowSpread: 0.05
@@ -14578,7 +14578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 915622779
+  UID: 1872582738
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 30
   shadowSpread: 0.05
@@ -15658,7 +15658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7848987638148598759}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 9.4, y: -10.21, z: -12.23}
+  m_LocalPosition: {x: 9.4, y: -10.68, z: -12.23}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17456,7 +17456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 1566523321
+  UID: -1030576721
   color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
   intensity: 30
   shadowSpread: 0.05

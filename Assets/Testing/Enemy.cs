@@ -145,6 +145,7 @@ public class Enemy : Entity
         foreach (Rigidbody rb in rbRagdolls)
         {
             rb.AddExplosionForce(explosionForce, collPoint, 1f, 0f, ForceMode.Impulse);
+            rb.gameObject.layer = LayerMask.NameToLayer("DeadEntity");
         }
     }
 
@@ -159,6 +160,10 @@ public class Enemy : Entity
         ToggleRagdoll(true);
         attackTrigger.enabled = false;
         nav.enabled = false;
+        foreach (Rigidbody rb in rbRagdolls)
+        {
+            rb.gameObject.layer = LayerMask.NameToLayer("DeadEntity");
+        }
     }
 
     public void ToggleRagdoll(bool state)

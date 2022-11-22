@@ -300,6 +300,26 @@ public class Movement : Entity
             auxEnemy.TakeDamage(strength + rHand.value, auxPos);
         }
     }
+    public new void TakeDamage(float damage)
+    {
+        health -= damage - damage * (protection / 100);
+        HealthBarUpdater();
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    public new void Die()
+    {
+        /*rb.isKinematic = true;
+        rb.useGravity=false;*/
+        Destroy(transform.GetChild(0).GetChild(1).gameObject);
+        rb.constraints = RigidbodyConstraints.FreezeAll;
+        anim.enabled = true;
+        anim.SetBool("IsDead", true);
+        this.enabled = false;
+    }
 
     public void Throw(bool leftRight)
     {

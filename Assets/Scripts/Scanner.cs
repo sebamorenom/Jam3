@@ -92,7 +92,7 @@ public class Scanner : MonoBehaviour
                     }
                     //lastSeenItem = boxSelected.objInside.GetComponent<Item>();
                     statsPanel.SetActive(true);
-                    statsPanel.transform.position = boxSelected.transform.position + panelOffset;
+                    //statsPanel.transform.position = boxSelected.transform.position + panelOffset;
                     statsPanel.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
                     nameUI.text = boxSelected.objName;
                     priceUI.text = boxSelected.price.ToString();
@@ -111,7 +111,7 @@ public class Scanner : MonoBehaviour
                     }
                     analyzedItem = hit.collider.gameObject.GetComponent<Item>();
                     statsPanel.SetActive(true);
-                    statsPanel.transform.position = analyzedItem.transform.position + panelOffset;
+                    //statsPanel.transform.position = analyzedItem.transform.position + panelOffset;
                     statsPanel.transform.rotation = Quaternion.LookRotation(Camera.main.transform.forward);
 
                     nameUI.text = "Name: " + analyzedItem.itemName;

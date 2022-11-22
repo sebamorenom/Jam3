@@ -182,7 +182,7 @@ MonoBehaviour:
   statsModifiers: []
   splashRadius: 0
   value: 10
-  price: 0
+  price: 50
   description: 
   hitColliders:
   - {fileID: 4508940370617908331}
