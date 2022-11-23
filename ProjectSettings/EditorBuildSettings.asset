@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/UI.unity
     guid: e7dc3bb8ec8ae164e991c29022aab81d
   - enabled: 1
-    path: Assets/Testing/testingScene.unity
-    guid: bbad8b85e94078e4abcdfcbff406e8f5
-  - enabled: 1
     path: Assets/Scenes/DungenTest.unity
     guid: 503de5d22c78ad24ca58e5c2bd5b589f
   m_configObjects: {}
