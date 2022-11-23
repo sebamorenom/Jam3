@@ -14,6 +14,7 @@ public class ChestUsable : MonoBehaviour
     [SerializeField]
     public GameObject mimicPrefab;
 
+    private bool open;
     AudioSource audioSrc;
     // Start is called before the first frame update
     private void Start()
@@ -23,7 +24,7 @@ public class ChestUsable : MonoBehaviour
     }
     public void Open()
     {
-        if (!isMimic)
+        if (!isMimic && !open)
         {
             anim.Play("Open");
             audioSrc.Play();

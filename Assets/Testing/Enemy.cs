@@ -140,6 +140,7 @@ public class Enemy : Entity
         ToggleRagdoll(true);
         StopCoroutine(noise);
         StopCoroutine(attackRange);
+        attackTrigger.enabled = false;
         gameObject.layer = LayerMask.NameToLayer("DeadEntity");
         nav.enabled = false;
         foreach (Rigidbody rb in rbRagdolls)

@@ -16,7 +16,7 @@ public class GroundChecker : MonoBehaviour
     {
 
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         onGround = true;
     }

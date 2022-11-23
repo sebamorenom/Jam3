@@ -7,6 +7,8 @@ public class VFXSmallPlayer : MonoBehaviour
 {
     [SerializeField]
     VisualEffect vfx;
+    [SerializeField]
+    AudioSource audioSrc;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +24,6 @@ public class VFXSmallPlayer : MonoBehaviour
     public void PlayVFX()
     {
         vfx.Play();
+        audioSrc.Play();
     }
 }

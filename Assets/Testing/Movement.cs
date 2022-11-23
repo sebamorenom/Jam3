@@ -82,13 +82,14 @@ public class Movement : Entity
     void Start()
     {
         Vector2 currentRot = Vector2.zero;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        
         scan = GetComponent<Scanner>();
         StartCoroutine(CheckLastSeenObject());
         anim = GetComponent<Animator>();
         rb.GetComponent<Rigidbody>();
         health = maxHealth;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame

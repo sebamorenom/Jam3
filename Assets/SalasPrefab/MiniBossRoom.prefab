@@ -1003,6 +1003,69 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1 &166556025567367711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4741998869886645781}
+  - component: {fileID: 1399161127816521109}
+  - component: {fileID: 9103306709472818483}
+  m_Layer: 0
+  m_Name: Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4741998869886645781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166556025567367711}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -56.28001, y: -0.32000124, z: 31.95861}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2271611348018407615}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1399161127816521109
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166556025567367711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 47.94053, y: 21.303015, z: 48.285103}
+  m_Center: {x: 24.194645, y: 8.782765, z: -0.5385666}
+--- !u!114 &9103306709472818483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166556025567367711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 0
+  priority: 0
+  blendDistance: 10
+  weight: 1
+  sharedProfile: {fileID: 0}
 --- !u!1 &168259408596796649
 GameObject:
   m_ObjectHideFlags: 0
@@ -6181,9 +6244,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -6225,8 +6288,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -6264,12 +6327,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -130127158
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: -926164065
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -7000,9 +7063,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -7044,8 +7107,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -7083,12 +7146,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -1371708087
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1629316939
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -7148,9 +7211,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -7192,8 +7255,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -7231,12 +7294,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -330056348
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: -1797812275
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -8478,9 +8541,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -8522,8 +8585,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -8561,12 +8624,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 315865916
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1301812310
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -12018,9 +12081,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -12062,8 +12125,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -12101,12 +12164,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 1814669849
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 805691111
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -20005,9 +20068,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -20049,8 +20112,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -20088,12 +20151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -1706431968
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: -670877592
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -21486,9 +21549,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -21530,8 +21593,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -21569,12 +21632,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -639401413
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: -972283724
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -26419,9 +26482,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -26463,8 +26526,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -26502,12 +26565,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 1477496610
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1109577664
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -35295,9 +35358,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -35339,8 +35402,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -35378,12 +35441,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 383839033
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: -183392817
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -37417,6 +37480,124 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &5092988242220429254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4266140574564726358}
+  - component: {fileID: 5558871717915305501}
+  - component: {fileID: 748452904830465007}
+  - component: {fileID: 8567240582110236004}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4266140574564726358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092988242220429254}
+  m_LocalRotation: {x: -0, y: 0.78617805, z: -0, w: 0.618}
+  m_LocalPosition: {x: -54.692085, y: 7.834103, z: 39.89861}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2271611348018407615}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 103.66, z: 0}
+--- !u!20 &5558871717915305501
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092988242220429254}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!81 &748452904830465007
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092988242220429254}
+  m_Enabled: 1
+--- !u!114 &8567240582110236004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5092988242220429254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &5095469868621626385
 GameObject:
   m_ObjectHideFlags: 0
@@ -37705,9 +37886,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -37749,8 +37930,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -37788,12 +37969,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 62505865
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1634013095
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -38745,9 +38926,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -38789,8 +38970,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -38828,12 +39009,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -2144520080
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1531880347
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -38976,9 +39157,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -39020,8 +39201,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -39059,12 +39240,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 1030580433
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1114296130
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -40536,9 +40717,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -40580,8 +40761,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -40619,12 +40800,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 618045214
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1428635293
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -45175,7 +45356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6243324418343384970}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0, y: 2.26, z: -0.31}
+  m_LocalPosition: {x: 0, y: 1.9, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -48586,9 +48767,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -48630,8 +48811,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -48669,12 +48850,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 1345824760
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1351929343
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -52766,9 +52947,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -52810,8 +52991,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -52849,12 +53030,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 790130566
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 651123346
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -54598,6 +54779,8 @@ Transform:
   - {fileID: 12070014699453030}
   - {fileID: 4515032576578881831}
   - {fileID: 6349330074690283841}
+  - {fileID: 4741998869886645781}
+  - {fileID: 4266140574564726358}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54618,8 +54801,8 @@ MonoBehaviour:
   RepeatMode: 2
   OverrideAutomaticTileBounds: 1
   TileBoundsOverride:
-    m_Center: {x: -32.052708, y: 8.53718, z: 31.350967}
-    m_Extent: {x: 23.546658, y: 10.166714, z: 23.762947}
+    m_Center: {x: -32.042664, y: 8.338035, z: 31.350967}
+    m_Extent: {x: 23.536613, y: 10.565007, z: 23.762947}
   Entrance: {fileID: 0}
   Exit: {fileID: 0}
   OverrideConnectionChance: 0
@@ -56131,9 +56314,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -56175,8 +56358,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -56214,12 +56397,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -479130510
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1459042760
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -62235,9 +62418,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -62279,8 +62462,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -62318,12 +62501,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -1796869064
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 58975715
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -62498,9 +62681,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -62542,8 +62725,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -62581,12 +62764,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: -1263029094
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: -1847055220
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -64998,9 +65181,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -65042,8 +65225,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -65081,12 +65264,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 1827360783
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: -847266472
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
@@ -66698,9 +66881,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  m_Intensity: 50
-  m_Range: 20
+  m_Color: {r: 0.6117647, g: 0.32156864, b: 0.30588236, a: 1}
+  m_Intensity: 56.6
+  m_Range: 23.1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -66742,8 +66925,8 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
+  m_ColorTemperature: 4763
+  m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
@@ -66781,12 +66964,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57f24a4aaa0761b45ba25e7e5108e2c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UID: 705572117
-  color: {r: 0.8, g: 0.65882355, b: 0.48235294, a: 1}
-  intensity: 50
+  UID: 1100668327
+  color: {r: 0.91372555, g: 0.38431376, b: 0.38431376, a: 1}
+  intensity: 1
   shadowSpread: 0.05
-  cutoff: 20
-  realisticFalloff: 1
+  cutoff: 10
+  realisticFalloff: 0
   samples: 8
   projMode: 0
   cookie: {fileID: 0}
