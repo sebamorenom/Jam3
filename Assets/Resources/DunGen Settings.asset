@@ -12,18 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad1ebb4e3aa3b474d849bc53fbe48191, type: 3}
   m_Name: DunGen Settings
   m_EditorClassIdentifier: 
-  defaultSocket: {fileID: 3385776913924477861}
+  defaultSocket: {fileID: 8456363950612064142}
   tagManager:
-    keys: 00000000010000000200000003000000040000000500000006000000
-    values:
-    - Boss
-    - MiniBoss
-    - Initial
-    - Special
-    - Middle
-    - Corridor
-    - EndBranch
---- !u!114 &3385776913924477861
+    keys: 
+    values: []
+--- !u!114 &8456363950612064142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -2018,6 +2018,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9170934176440433536, guid: fba27023a8556d143914be77aa6c3e60,
         type: 3}
+      propertyPath: quantity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9170934176440433536, guid: fba27023a8556d143914be77aa6c3e60,
+        type: 3}
       propertyPath: moneyShower
       value: 
       objectReference: {fileID: 530777606}
@@ -2421,7 +2426,9 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 0.18000793
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 302527264667180524, guid: fba27023a8556d143914be77aa6c3e60, type: 3}
+    - {fileID: 302527264667180522, guid: fba27023a8556d143914be77aa6c3e60, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fba27023a8556d143914be77aa6c3e60, type: 3}
 --- !u!114 &8896719203483984120 stripped
 MonoBehaviour:
