@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinToMenu : MonoBehaviour
 {
@@ -24,7 +25,14 @@ public class WinToMenu : MonoBehaviour
     {
         if (finalBoss.health <= 0)
         {
-            sceneCh.Loadscene("UI");
+            GoToMainMenu();
         }
+    }
+    public void GoToMainMenu()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
     }
 }

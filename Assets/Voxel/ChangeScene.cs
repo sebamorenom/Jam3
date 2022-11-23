@@ -11,5 +11,12 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void GoToMainMenu()
+    {
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = true;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(0);
+    }
 
 }

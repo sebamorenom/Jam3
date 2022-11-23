@@ -342,8 +342,8 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 2.25
-    functionName: Loadscene
-    data: UI
+    functionName: GoToMainMenu
+    data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
