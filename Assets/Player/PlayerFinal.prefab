@@ -2610,6 +2610,9 @@ GameObject:
   - component: {fileID: 8896719205200766556}
   - component: {fileID: 8896719205200766557}
   - component: {fileID: 8896719205200766559}
+  - component: {fileID: 8161451835277640837}
+  - component: {fileID: 2234402078122243519}
+  - component: {fileID: 3539068221641977766}
   - component: {fileID: 8896719205200766558}
   m_Layer: 27
   m_Name: PlayerFinal
@@ -2772,6 +2775,56 @@ MonoBehaviour:
   arrowBetter: {fileID: 21300000, guid: 5441c2f337d6a694aa0896bb3e357a2d, type: 3}
   arrowWorst: {fileID: 21300000, guid: 0beafd2ad0513b24084677b459b750f8, type: 3}
   signEqual: {fileID: 21300000, guid: f0faf4725916698469e48f5334d8d08e, type: 3}
+--- !u!114 &8161451835277640837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896719205200766502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6132ce70621522459f5642d394941ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 11400000, guid: 5549feaaa8349714898fc881732c1697, type: 2}
+  key: 304
+--- !u!114 &2234402078122243519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896719205200766502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6132ce70621522459f5642d394941ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ability: {fileID: 11400000, guid: 7060e6210713904498ab13a848fffd3d, type: 2}
+  key: 306
+--- !u!114 &3539068221641977766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8896719205200766502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d54e93ff04f5b2941a7cf06bed7044e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 8896719203947900604}
+  attackPoint: {fileID: 8896719204071122263}
+  objectToThrow: {fileID: 7619250406687859405, guid: ad474bf3cbca44d43aba3e3ec0784db3,
+    type: 3}
+  item: {fileID: 0}
+  totalThrows: 100
+  throwCoolDown: 1
+  throwKey: 257
+  throwForce: 20
+  throwUpwardForce: 0
 --- !u!95 &8896719205200766558
 Animator:
   serializedVersion: 4
