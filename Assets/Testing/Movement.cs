@@ -62,9 +62,9 @@ public class Movement : Entity
     Animator[] handAnimators;
     [SerializeField]
     Image healthBar;
-    [SerializeField]
-    GroundChecker grChecker;
 
+
+    private bool isOnGround;
     private HandSituation hSituation = HandSituation.Free;
     private Animator anim;
     private Scanner scan;
@@ -82,7 +82,7 @@ public class Movement : Entity
     void Start()
     {
         Vector2 currentRot = Vector2.zero;
-        
+
         scan = GetComponent<Scanner>();
         StartCoroutine(CheckLastSeenObject());
         anim = GetComponent<Animator>();
@@ -415,7 +415,7 @@ public class Movement : Entity
             }
         }
         movVect = inputVect.x * transform.right + inputVect.z * transform.forward;
-        if (Input.GetKeyDown(KeyCode.Space) && grChecker.IsOnGround())
+        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
             wantsJump = true;
     }
 
@@ -485,7 +485,17 @@ public class Movement : Entity
 
     public void OnCollisionEnter(Collision collision)
     {
-
+        if (Vector3.Angle(Vector3.up, collision.GetContact(0).normal) <= 45)
+        {
+            isOnGround = true;
+        }
+    }
+    public void OnCollisionStay(Collision collision)
+    {
+        if (Vector3.Angle(Vector3.up, collision.GetContact(0).normal) <= 45)
+        {
+            isOnGround = true;
+        }
     }
 
     public void ClearInputs()
@@ -493,6 +503,7 @@ public class Movement : Entity
         wantsPrimaryAction = false;
         wantsThrowRight = false;
         wantsThrowLeft = false;
+        isOnGround = false;
     }
 
     public void HealthBarUpdater()

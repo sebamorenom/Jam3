@@ -13,9 +13,12 @@ public class Merchant : MonoBehaviour
     [SerializeField]
     MerchantBox[] boxes;
 
+
+    private Collider coll;
     private void Start()
     {
         FillBoxes();
+        coll = GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -28,7 +31,7 @@ public class Merchant : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Item"))
         {
-            curr.Exchange(transform.position + transform.up * 2, other.gameObject.GetComponent<Item>().price);
+            curr.Exchange(coll.bounds.center + transform.up * 2, other.gameObject.GetComponent<Item>().price);
             Destroy(other.gameObject);
         }
     }

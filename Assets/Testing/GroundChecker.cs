@@ -18,12 +18,14 @@ public class GroundChecker : MonoBehaviour
     }
     private void OnTriggerStay(Collider other)
     {
-        onGround = true;
+        if (other.gameObject.layer != 2)
+            onGround = true;
     }
 
     private void OnTriggerExit(Collider collision)
     {
-        onGround = false;
+        if (collision.gameObject.layer != 2)
+            onGround = false;
     }
 
     public bool IsOnGround()
